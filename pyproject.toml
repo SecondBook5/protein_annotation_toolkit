@@ -60,6 +60,14 @@ dependencies = [
 cache = [
     "redis[hiredis]>=5.0.0",
 ]
+api = [
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+]
+visualization = [
+    "matplotlib>=3.8.0",
+    "numpy>=1.26.0",
+]
 export = [
     "pandas>=2.1.0",
     "pyarrow>=14.0.0",
@@ -80,7 +88,7 @@ dev = [
     "ipython>=8.19.0",
 ]
 all = [
-    "protein-annotation-toolkit[cache,export,dev]",
+    "protein-annotation-toolkit[cache,api,visualization,export,dev]",
 ]
 
 [project.scripts]

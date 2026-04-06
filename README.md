@@ -6,6 +6,7 @@ A professional bioinformatics toolkit for protein data management and analysis. 
 
 ## Features
 
+### Core Functionality
 - **Biological Identifier Validation**: Rigorous validation with detailed error messages for UniProt IDs
 - **XML Parsing**: Parse UniProt and BLAST XML formats with robust error handling
 - **REST API Integration**: Async clients for UniProt and KEGG with retry logic and rate limiting
@@ -13,6 +14,16 @@ A professional bioinformatics toolkit for protein data management and analysis. 
 - **Concurrent Operations**: Batch API requests with aiohttp for high throughput
 - **Rich CLI Interface**: Beautiful terminal output with progress bars and formatted tables
 - **Interactive Tutorial**: Comprehensive Jupyter notebook demonstrating all features
+
+### Advanced Features
+- **Data Export**: Export proteins to CSV, JSON, or TSV with filtering by organism or GO term
+- **Advanced Queries**: Search by organism, GO term, PDB structures, or text matching
+- **Database Statistics**: Get counts, distributions, and summaries of your protein data
+- **Sequence Analysis**: Calculate molecular weight, isoelectric point, composition, and similarity
+- **Batch Refresh**: Update stale protein records with configurable age thresholds
+- **Caching Layer**: Optional Redis caching for API responses to improve performance
+- **REST API**: FastAPI web service with OpenAPI documentation
+- **Data Visualization**: Generate publication-quality plots of organism distributions, sequence lengths, and GO enrichment
 
 ## Quick Start
 
@@ -62,8 +73,14 @@ cd protein_annotation_toolkit
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install package with dependencies
+# Basic installation
 pip install -e .
+
+# Install with optional features
+pip install -e ".[visualization]"  # For plotting
+pip install -e ".[api]"            # For web API
+pip install -e ".[cache]"          # For Redis caching
+pip install -e ".[all]"            # All features including dev tools
 
 # Install Jupyter for the tutorial notebook
 pip install jupyter
@@ -121,12 +138,13 @@ This script demonstrates:
 
 ### Command-Line Interface
 
-Initialize the database:
+**Database Management:**
 ```bash
+# Initialize database
 pat db init
 ```
 
-Ingest protein data:
+**Data Ingestion:**
 ```bash
 # From a text file containing UniProt IDs
 pat ingest-text proteins.txt
@@ -135,13 +153,82 @@ pat ingest-text proteins.txt
 pat ingest-xml examples/data/uniprot_xml/
 ```
 
-Query the database:
+**Basic Queries:**
 ```bash
 # Get details for a specific protein
 pat query-protein P13773
 
 # List all proteins in the database
-pat list-proteins
+pat list-proteins --limit 50
+```
+
+**Advanced Queries:**
+```bash
+# Query by organism
+pat query by-organism "Homo sapiens" --limit 100
+
+# Query by GO term
+pat query by-go GO:0004930 --include-proteins
+
+# Query proteins with PDB structures
+pat query with-structures --min-resolution 2.0
+
+# Search proteins by name
+pat search "kinase" --field name --limit 20
+```
+
+**Database Statistics:**
+```bash
+# Get summary statistics
+pat stats summary
+
+# Top organisms by protein count
+pat stats by-organism --top 20
+
+# Most common GO terms
+pat stats go-terms --most-common 30
+```
+
+**Data Export:**
+```bash
+# Export all proteins
+pat export proteins output.csv --format csv
+
+# Export by organism
+pat export by-organism "Homo sapiens" human.json --format json
+
+# Export by GO term
+pat export by-go-term GO:0004930 proteins.tsv --format tsv
+```
+
+**Sequence Analysis:**
+```bash
+# Analyze single protein sequence
+pat analyze sequence P13773
+
+# Compare two sequences
+pat analyze compare P13773 Q02293
+```
+
+**Batch Operations:**
+```bash
+# Refresh stale proteins (older than 30 days)
+pat refresh stale --older-than 30 --batch-size 50
+
+# Force refresh specific protein
+pat refresh protein P13773 --force
+```
+
+**Visualization:**
+```bash
+# Plot organism distribution
+pat visualize organism-distribution chart.png --top 15
+
+# Plot sequence length distribution
+pat visualize sequence-lengths lengths.png --organism "Homo sapiens"
+
+# Plot GO term enrichment
+pat visualize go-enrichment enrichment.pdf --query "kinase" --top 20
 ```
 
 ## Code Examples
@@ -196,6 +283,95 @@ async with KEGGClient() as client:
         print(f"{pathway['pathway_id']}: {pathway['name']}")
 ```
 
+### Query and Export Data
+
+```python
+from protein_annotation_toolkit.services.query import QueryService
+from protein_annotation_toolkit.db import get_async_db_session
+
+async with get_async_db_session() as session:
+    service = QueryService(session)
+    
+    # Get statistics
+    stats = await service.get_statistics()
+    print(f"Total proteins: {stats['protein_count']}")
+    
+    # Export to CSV
+    count = await service.export_proteins(
+        Path("proteins.csv"),
+        format="csv",
+        organism="Homo sapiens"
+    )
+    print(f"Exported {count} proteins")
+```
+
+### Analyze Sequences
+
+```python
+from protein_annotation_toolkit.utils import analyze_sequence
+
+sequence = "MKALIVLGLVLLSVTVQGKVFERCELARTLKRLGMDGYRGISLANWMCLAKWESGYNTRATNYNAGDRSTDYGIFQINSRYWCNDGKTPGAVNACHLSCSALLQDNIADAVACAKRVVRDPQGIRAWVAWRNRCQNRDVRQYVQGCGV"
+
+analysis = analyze_sequence(sequence)
+print(f"Molecular Weight: {analysis['molecular_weight']:.2f} Da")
+print(f"Isoelectric Point: {analysis['isoelectric_point']:.2f}")
+print(f"Length: {analysis['length']} aa")
+```
+
+### Run Web API
+
+```python
+from protein_annotation_toolkit.api import create_app
+import uvicorn
+
+app = create_app()
+uvicorn.run(app, host="0.0.0.0", port=8000)
+```
+
+Then access the API at `http://localhost:8000/docs` for interactive documentation.
+
+## Web API
+
+The toolkit includes a FastAPI-based REST API for programmatic access to protein data.
+
+### Starting the API Server
+
+```bash
+# Install API dependencies
+pip install -e ".[api]"
+
+# Run the server
+python -m protein_annotation_toolkit.api.app
+```
+
+Or with uvicorn directly:
+```bash
+uvicorn protein_annotation_toolkit.api.app:app --reload
+```
+
+### API Endpoints
+
+**Statistics:**
+- `GET /api/stats/summary` - Database statistics
+- `GET /api/stats/organisms` - Top organisms by protein count
+- `GET /api/stats/go-terms` - Most common GO terms
+
+**Proteins:**
+- `GET /api/proteins/{accession}` - Get protein by accession
+- `GET /api/proteins` - List proteins (with optional organism filter)
+- `POST /api/search` - Search proteins by text
+
+**GO Terms:**
+- `GET /api/go-terms/{go_id}` - Get GO term information
+
+### Interactive Documentation
+
+Visit `http://localhost:8000/docs` for automatically generated interactive API documentation with:
+- Complete endpoint descriptions
+- Request/response schemas
+- Try-it-out functionality
+- Example requests
+
 ## Architecture
 
 ```
@@ -204,11 +380,13 @@ src/protein_annotation_toolkit/
 ├── config.py                 # Pydantic settings management
 ├── validators.py             # Biological identifier validation
 ├── exceptions.py             # Custom exception hierarchy
+├── api/
+│   └── app.py               # FastAPI web application
 ├── db/
 │   ├── models.py            # SQLAlchemy 2.0 ORM models
 │   └── session.py           # Async session management
 ├── clients/
-│   ├── base.py              # Base async HTTP client with retry logic
+│   ├── base.py              # Base async HTTP client with retry and caching
 │   ├── uniprot.py           # UniProt REST API client
 │   ├── kegg.py              # KEGG REST API client
 │   └── blast.py             # NCBI BLAST API client
@@ -216,8 +394,14 @@ src/protein_annotation_toolkit/
 │   ├── uniprot_xml.py       # UniProt XML parser (lxml)
 │   ├── blast_xml.py         # BLAST XML parser
 │   └── text.py              # Text file parsers
-└── services/
-    └── ingest.py            # Orchestration service for data ingestion
+├── services/
+│   ├── ingest.py            # Data ingestion orchestration
+│   ├── query.py             # Advanced queries and statistics
+│   └── refresh.py           # Batch update operations
+├── utils/
+│   └── sequence.py          # Sequence analysis utilities
+└── visualization/
+    └── plots.py             # Matplotlib plotting functions
 ```
 
 ## Database Schema
@@ -260,12 +444,17 @@ This toolkit showcases professional software engineering and computational biolo
 - **XML Processing**: Efficient `lxml` parsing with XPath queries and namespace handling
 - **Error Handling**: Custom exception hierarchy with detailed validation messages
 - **Configuration**: Pydantic v2 settings with environment variable management
+- **Web Services**: FastAPI REST API with Pydantic models and OpenAPI documentation
+- **Caching**: Optional Redis integration for performance optimization
+- **Data Visualization**: Matplotlib plots with customizable styling
 
 ### Software Quality
+- **Testing**: Comprehensive pytest suite with 29 tests (unit + integration), 40% coverage
 - **Type Safety**: Comprehensive type hints throughout codebase
 - **Documentation**: Docstrings, inline comments, and tutorial notebook
 - **Logging**: Structured logging with `structlog` for observability
-- **Package Management**: Modern `pyproject.toml` with proper dependencies
+- **Package Management**: Modern `pyproject.toml` with optional dependencies
+- **Modular Design**: Clear separation of concerns across modules
 
 ### Developer Experience
 - **CLI Design**: Click framework with Rich formatting for beautiful terminal output
@@ -306,12 +495,22 @@ This is a **portfolio project** demonstrating computational biology and software
 - Batch processing of UniProt protein records
 - Educational tool for learning bioinformatics APIs
 
+**Completed Features:**
+- Comprehensive test suite with pytest (29 tests, unit + integration)
+- Data export in multiple formats (CSV, JSON, TSV)
+- REST API with FastAPI and OpenAPI documentation
+- Optional Redis caching for improved performance
+- Sequence analysis utilities (molecular weight, pI, composition)
+- Data visualization with matplotlib
+- Batch refresh operations
+
 **Future Enhancements:**
-- Comprehensive test suite with pytest
 - GitHub Actions CI/CD pipeline
-- Additional export formats (CSV, JSON)
-- Web API with FastAPI
-- Docker containerization
+- Docker containerization with docker-compose
+- Additional visualization types (network graphs, heatmaps)
+- Workflow automation with Snakemake
+- Extended BLAST integration with automatic submission
+- Protein structure prediction integration (AlphaFold API)
 
 ## License
 
