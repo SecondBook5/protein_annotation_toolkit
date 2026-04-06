@@ -516,6 +516,8 @@ protein_annotation_toolkit/
 
 This is a **portfolio project** demonstrating computational biology and software engineering skills. It was extracted and refined from graduate-level bioinformatics coursework into a professional, production-ready toolkit.
 
+**Developed during:** Johns Hopkins University - Biological Databases and Database Tools (EN.605.652)
+
 **Use Cases:**
 - Protein annotation and functional characterization
 - Integration of heterogeneous biological databases
