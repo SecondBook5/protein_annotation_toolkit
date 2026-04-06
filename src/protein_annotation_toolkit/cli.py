@@ -27,6 +27,8 @@ from protein_annotation_toolkit.visualization import (
     plot_organism_distribution,
     plot_sequence_lengths,
 )
+from protein_annotation_toolkit.clients import KEGGClient, BlastClient
+from protein_annotation_toolkit.parsers import BlastXMLParser
 
 # Initialize Rich console
 console = Console()
@@ -971,6 +973,306 @@ def viz_go_enrichment(output_file: Path, query: str, top: int):
 
     except Exception as e:
         console.print(f"[bold red]✗[/bold red] Visualization failed: {e}")
+        raise click.Abort()
+
+
+@cli.group()
+def kegg():
+    """KEGG pathway analysis commands."""
+    pass
+
+
+@kegg.command("pathways")
+@click.argument("uniprot_id")
+def kegg_pathways(uniprot_id: str):
+    """
+    Get KEGG pathways for a protein.
+
+    Performs full workflow: UniProt ID → KEGG gene ID → pathways → pathway details.
+
+    Example:
+        pat kegg pathways P13773
+    """
+    async def run_kegg():
+        async with KEGGClient() as client:
+            return await client.get_pathways_for_protein(uniprot_id)
+
+    try:
+        console.print(f"[bold blue]Fetching KEGG pathways for {uniprot_id}...[/bold blue]")
+        pathways = asyncio.run(run_kegg())
+
+        if not pathways:
+            console.print(f"[yellow]No KEGG pathways found for {uniprot_id}[/yellow]")
+            console.print("This protein may not be in KEGG or has no pathway annotations.")
+            return
+
+        # Display pathways
+        console.print(f"\n[bold]Found {len(pathways)} KEGG pathway(s):[/bold]\n")
+
+        table = Table(title=f"KEGG Pathways for {uniprot_id}")
+        table.add_column("Pathway ID", style="cyan")
+        table.add_column("Name", style="white")
+        table.add_column("Class", style="yellow")
+
+        for pathway in pathways:
+            table.add_row(
+                pathway.get("pathway_id", "-"),
+                pathway.get("name", "-"),
+                pathway.get("class", "-")
+            )
+
+        console.print(table)
+
+    except Exception as e:
+        console.print(f"[bold red]✗[/bold red] KEGG query failed: {e}")
+        raise click.Abort()
+
+
+@kegg.command("convert")
+@click.argument("uniprot_ids", nargs=-1, required=True)
+def kegg_convert(uniprot_ids):
+    """
+    Convert UniProt IDs to KEGG gene IDs.
+
+    Example:
+        pat kegg convert P13773 P29274
+    """
+    async def run_convert():
+        async with KEGGClient() as client:
+            return await client.convert_uniprot_to_kegg(list(uniprot_ids))
+
+    try:
+        console.print(f"[bold blue]Converting {len(uniprot_ids)} UniProt ID(s) to KEGG...[/bold blue]")
+        mapping = asyncio.run(run_convert())
+
+        if not mapping:
+            console.print("[yellow]No KEGG mappings found[/yellow]")
+            return
+
+        # Display mapping
+        console.print(f"\n[bold]Conversion Results:[/bold]\n")
+
+        table = Table(title="UniProt → KEGG Mapping")
+        table.add_column("UniProt ID", style="cyan")
+        table.add_column("KEGG Gene ID(s)", style="green")
+
+        for uniprot_id in uniprot_ids:
+            kegg_ids = mapping.get(uniprot_id, [])
+            if kegg_ids:
+                table.add_row(uniprot_id, ", ".join(kegg_ids))
+            else:
+                table.add_row(uniprot_id, "[dim]Not found[/dim]")
+
+        console.print(table)
+
+    except Exception as e:
+        console.print(f"[bold red]✗[/bold red] Conversion failed: {e}")
+        raise click.Abort()
+
+
+@kegg.command("pathway-info")
+@click.argument("pathway_id")
+def kegg_pathway_info(pathway_id: str):
+    """
+    Get detailed information about a KEGG pathway.
+
+    Example:
+        pat kegg pathway-info path:hsa00010
+        pat kegg pathway-info hsa00010
+    """
+    async def run_info():
+        async with KEGGClient() as client:
+            return await client.get_pathway_info(pathway_id)
+
+    try:
+        console.print(f"[bold blue]Fetching KEGG pathway info: {pathway_id}...[/bold blue]")
+        info = asyncio.run(run_info())
+
+        if not info:
+            console.print(f"[yellow]Pathway {pathway_id} not found[/yellow]")
+            return
+
+        # Display info
+        console.print(f"\n[bold]Pathway Information:[/bold]")
+        console.print(f"  ID: {info.get('pathway_id', 'N/A')}")
+        console.print(f"  Name: {info.get('name', 'N/A')}")
+        console.print(f"  Class: {info.get('class', 'N/A')}")
+
+    except Exception as e:
+        console.print(f"[bold red]✗[/bold red] Pathway info failed: {e}")
+        raise click.Abort()
+
+
+@cli.group()
+def blast():
+    """BLAST sequence search commands."""
+    pass
+
+
+@blast.command("submit")
+@click.argument("uniprot_id")
+@click.option("--program", default="blastp", help="BLAST program (blastp, blastn, etc.)")
+@click.option("--database", default="nr", help="Target database (nr, swissprot, pdb)")
+@click.option("--email", help="Your email address (required by NCBI)")
+def blast_submit(uniprot_id: str, program: str, database: str, email: str):
+    """
+    Submit a BLAST search for a protein sequence.
+
+    Fetches protein sequence from database and submits to NCBI BLAST.
+
+    Example:
+        pat blast submit P13773 --email your@email.com
+        pat blast submit P29274 --program blastp --database swissprot
+    """
+    from sqlalchemy import select
+    from protein_annotation_toolkit.db.models import Protein
+
+    async def run_blast():
+        # Get protein sequence from database
+        async with get_async_db_session() as session:
+            result = await session.execute(
+                select(Protein).where(Protein.uniprot_accession == uniprot_id)
+            )
+            protein = result.scalar_one_or_none()
+
+            if not protein or not protein.sequence:
+                return None, "Protein or sequence not found in database"
+
+            # Submit BLAST search
+            async with BlastClient() as client:
+                rid = await client.submit_search(
+                    sequence=protein.sequence,
+                    program=program,
+                    database=database,
+                    email=email
+                )
+                return rid, None
+
+    try:
+        console.print(f"[bold blue]Submitting BLAST search for {uniprot_id}...[/bold blue]")
+        console.print(f"Program: {program}, Database: {database}")
+
+        rid, error = asyncio.run(run_blast())
+
+        if error:
+            console.print(f"[bold red]✗[/bold red] {error}")
+            return
+
+        console.print(f"\n[bold green]✓[/bold green] BLAST search submitted successfully!")
+        console.print(f"Request ID (RID): [cyan]{rid}[/cyan]")
+        console.print(f"\nCheck status with: [bold]pat blast status {rid}[/bold]")
+        console.print(f"Retrieve results with: [bold]pat blast results {rid}[/bold]")
+        console.print("\n[dim]Note: BLAST searches typically take 1-5 minutes to complete[/dim]")
+
+    except Exception as e:
+        console.print(f"[bold red]✗[/bold red] BLAST submission failed: {e}")
+        raise click.Abort()
+
+
+@blast.command("status")
+@click.argument("rid")
+def blast_status(rid: str):
+    """
+    Check the status of a BLAST search.
+
+    Example:
+        pat blast status XXXXXXXXXX
+    """
+    async def run_check():
+        async with BlastClient() as client:
+            return await client.check_status(rid)
+
+    try:
+        console.print(f"[bold blue]Checking BLAST search status: {rid}...[/bold blue]")
+        status = asyncio.run(run_check())
+
+        if status == "READY":
+            console.print(f"[bold green]✓[/bold green] Search is complete!")
+            console.print(f"Retrieve results with: [bold]pat blast results {rid}[/bold]")
+        elif status == "WAITING":
+            console.print(f"[yellow]⏳[/yellow] Search is still running...")
+            console.print("Check again in a minute.")
+        elif status == "UNKNOWN":
+            console.print(f"[yellow]⚠[/yellow] Search status unknown or RID invalid")
+        else:
+            console.print(f"Status: {status}")
+
+    except Exception as e:
+        console.print(f"[bold red]✗[/bold red] Status check failed: {e}")
+        raise click.Abort()
+
+
+@blast.command("results")
+@click.argument("rid")
+@click.option("--output", type=click.Path(path_type=Path), help="Save XML results to file")
+@click.option("--top", type=int, default=10, help="Number of top hits to display")
+def blast_results(rid: str, output: Path, top: int):
+    """
+    Retrieve and parse BLAST search results.
+
+    Example:
+        pat blast results XXXXXXXXXX
+        pat blast results XXXXXXXXXX --output results.xml
+        pat blast results XXXXXXXXXX --top 20
+    """
+    async def run_fetch():
+        async with BlastClient() as client:
+            return await client.fetch_results(rid)
+
+    try:
+        console.print(f"[bold blue]Fetching BLAST results: {rid}...[/bold blue]")
+        xml_results = asyncio.run(run_fetch())
+
+        if not xml_results:
+            console.print(f"[yellow]No results found for RID: {rid}[/yellow]")
+            console.print("The search may still be running. Check status first.")
+            return
+
+        # Save XML if requested
+        if output:
+            with open(output, "w") as f:
+                f.write(xml_results)
+            console.print(f"[green]✓[/green] XML results saved to {output}")
+
+        # Parse and display results
+        parser = BlastXMLParser()
+        data = parser.parse_string(xml_results)
+
+        console.print(f"\n[bold]BLAST Results Summary:[/bold]")
+        console.print(f"  Query: {data.get('query_id', 'Unknown')}")
+        console.print(f"  Query Length: {data.get('query_length', 'Unknown')} aa")
+        console.print(f"  Database: {data.get('database', 'Unknown')}")
+        console.print(f"  Total Hits: {len(data.get('hits', []))}")
+
+        hits = data.get("hits", [])[:top]
+
+        if hits:
+            console.print(f"\n[bold]Top {len(hits)} Hits:[/bold]\n")
+
+            table = Table()
+            table.add_column("Rank", style="cyan", justify="right")
+            table.add_column("Accession", style="green")
+            table.add_column("Description", style="white")
+            table.add_column("Score", style="yellow", justify="right")
+            table.add_column("E-value", style="magenta", justify="right")
+            table.add_column("Identity", style="blue", justify="right")
+
+            for i, hit in enumerate(hits, 1):
+                table.add_row(
+                    str(i),
+                    hit.get("accession", "-"),
+                    hit.get("definition", "-")[:50] + "...",
+                    str(hit.get("score", "-")),
+                    f"{hit.get('evalue', 0):.2e}",
+                    f"{hit.get('identity_percent', 0):.1f}%"
+                )
+
+            console.print(table)
+        else:
+            console.print("[yellow]No hits found[/yellow]")
+
+    except Exception as e:
+        console.print(f"[bold red]✗[/bold red] Results fetch failed: {e}")
         raise click.Abort()
 
 

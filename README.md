@@ -24,6 +24,8 @@ A professional bioinformatics toolkit for protein data management and analysis. 
 - **Caching Layer**: Optional Redis caching for API responses to improve performance
 - **REST API**: FastAPI web service with OpenAPI documentation
 - **Data Visualization**: Generate publication-quality plots of organism distributions, sequence lengths, and GO enrichment
+- **KEGG Integration**: Query KEGG pathways, convert UniProt to KEGG IDs, retrieve pathway details
+- **BLAST Integration**: Submit BLAST searches, check status, retrieve and parse results
 
 ## Quick Start
 
@@ -229,6 +231,31 @@ pat visualize sequence-lengths lengths.png --organism "Homo sapiens"
 
 # Plot GO term enrichment
 pat visualize go-enrichment enrichment.pdf --query "kinase" --top 20
+```
+
+**KEGG Pathway Analysis:**
+```bash
+# Get KEGG pathways for a protein
+pat kegg pathways P29274
+
+# Convert UniProt IDs to KEGG gene IDs
+pat kegg convert P29274 P13773
+
+# Get detailed pathway information
+pat kegg pathway-info hsa04080
+```
+
+**BLAST Sequence Search:**
+```bash
+# Submit a BLAST search
+pat blast submit P13773 --email your@email.com
+
+# Check search status
+pat blast status RID_XXXXXXXXXX
+
+# Retrieve and parse results
+pat blast results RID_XXXXXXXXXX --top 20
+pat blast results RID_XXXXXXXXXX --output results.xml
 ```
 
 ## Code Examples
