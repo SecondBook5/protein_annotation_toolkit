@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="no" ?>
+<uniprot xmlns="http://uniprot.org/uniprot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uniprot.org/uniprot http://www.uniprot.org/docs/uniprot.xsd">
+<entry dataset="Swiss-Prot" created="1990-01-01" modified="2026-01-28" version="164" xmlns="http://uniprot.org/uniprot">
+  <accession>P13773</accession>
+  <accession>Q557I7</accession>
+  <name>CAR1_DICDI</name>
+  <protein>
+    <recommendedName>
+      <fullName>Cyclic AMP receptor 1</fullName>
+      <shortName>cAMP receptor 1</shortName>
+    </recommendedName>
+  </protein>
+  <gene>
+    <name type="primary">carA-1</name>
+    <name type="synonym">car1</name>
+    <name type="ORF">DDB_G0273397</name>
+  </gene>
+  <gene>
+    <name type="primary">carA-2</name>
+    <name type="synonym">car1</name>
+    <name type="ORF">DDB_G0273533</name>
+  </gene>
+  <organism>
+    <name type="scientific">Dictyostelium discoideum</name>
+    <name type="common">Social amoeba</name>
+    <dbReference type="NCBI Taxonomy" id="44689"/>
+    <lineage>
+      <taxon>Eukaryota</taxon>
+      <taxon>Amoebozoa</taxon>
+      <taxon>Evosea</taxon>
+      <taxon>Eumycetozoa</taxon>
+      <taxon>Dictyostelia</taxon>
+      <taxon>Dictyosteliales</taxon>
+      <taxon>Dictyosteliaceae</taxon>
+      <taxon>Dictyostelium</taxon>
+    </lineage>
+  </organism>
+  <reference key="1">
+    <citation type="journal article" date="1988" name="Science" volume="241" first="1467" last="1472">
+      <title>A chemoattractant receptor controls development in Dictyostelium discoideum.</title>
+      <authorList>
+        <person name="Klein P.S."/>
+        <person name="Sun T.J."/>
+        <person name="Saxe C.L. III"/>
+        <person name="Kimmel A.R."/>
+        <person name="Johnson R.L."/>
+        <person name="Devreotes P.N."/>
+      </authorList>
+      <dbReference type="PubMed" id="3047871"/>
+      <dbReference type="DOI" id="10.1126/science.3047871"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [MRNA]</scope>
+    <scope>FUNCTION</scope>
+  </reference>
+  <reference key="2">
+    <citation type="journal article" date="2002" name="Nature" volume="418" first="79" last="85">
+      <title>Sequence and analysis of chromosome 2 of Dictyostelium discoideum.</title>
+      <authorList>
+        <person name="Gloeckner G."/>
+        <person name="Eichinger L."/>
+        <person name="Szafranski K."/>
+        <person name="Pachebat J.A."/>
+        <person name="Bankier A.T."/>
+        <person name="Dear P.H."/>
+        <person name="Lehmann R."/>
+        <person name="Baumgart C."/>
+        <person name="Parra G."/>
+        <person name="Abril J.F."/>
+        <person name="Guigo R."/>
+        <person name="Kumpf K."/>
+        <person name="Tunggal B."/>
+        <person name="Cox E.C."/>
+        <person name="Quail M.A."/>
+        <person name="Platzer M."/>
+        <person name="Rosenthal A."/>
+        <person name="Noegel A.A."/>
+      </authorList>
+      <dbReference type="PubMed" id="12097910"/>
+      <dbReference type="DOI" id="10.1038/nature00847"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]</scope>
+    <source>
+      <strain>AX4</strain>
+    </source>
+  </reference>
+  <reference key="3">
+    <citation type="journal article" date="2005" name="Nature" volume="435" first="43" last="57">
+      <title>The genome of the social amoeba Dictyostelium discoideum.</title>
+      <authorList>
+        <person name="Eichinger L."/>
+        <person name="Pachebat J.A."/>
+        <person name="Gloeckner G."/>
+        <person name="Rajandream M.A."/>
+        <person name="Sucgang R."/>
+        <person name="Berriman M."/>
+        <person name="Song J."/>
+        <person name="Olsen R."/>
+        <person name="Szafranski K."/>
+        <person name="Xu Q."/>
+        <person name="Tunggal B."/>
+        <person name="Kummerfeld S."/>
+        <person name="Madera M."/>
+        <person name="Konfortov B.A."/>
+        <person name="Rivero F."/>
+        <person name="Bankier A.T."/>
+        <person name="Lehmann R."/>
+        <person name="Hamlin N."/>
+        <person name="Davies R."/>
+        <person name="Gaudet P."/>
+        <person name="Fey P."/>
+        <person name="Pilcher K."/>
+        <person name="Chen G."/>
+        <person name="Saunders D."/>
+        <person name="Sodergren E.J."/>
+        <person name="Davis P."/>
+        <person name="Kerhornou A."/>
+        <person name="Nie X."/>
+        <person name="Hall N."/>
+        <person name="Anjard C."/>
+        <person name="Hemphill L."/>
+        <person name="Bason N."/>
+        <person name="Farbrother P."/>
+        <person name="Desany B."/>
+        <person name="Just E."/>
+        <person name="Morio T."/>
+        <person name="Rost R."/>
+        <person name="Churcher C.M."/>
+        <person name="Cooper J."/>
+        <person name="Haydock S."/>
+        <person name="van Driessche N."/>
+        <person name="Cronin A."/>
+        <person name="Goodhead I."/>
+        <person name="Muzny D.M."/>
+        <person name="Mourier T."/>
+        <person name="Pain A."/>
+        <person name="Lu M."/>
+        <person name="Harper D."/>
+        <person name="Lindsay R."/>
+        <person name="Hauser H."/>
+        <person name="James K.D."/>
+        <person name="Quiles M."/>
+        <person name="Madan Babu M."/>
+        <person name="Saito T."/>
+        <person name="Buchrieser C."/>
+        <person name="Wardroper A."/>
+        <person name="Felder M."/>
+        <person name="Thangavelu M."/>
+        <person name="Johnson D."/>
+        <person name="Knights A."/>
+        <person name="Loulseged H."/>
+        <person name="Mungall K.L."/>
+        <person name="Oliver K."/>
+        <person name="Price C."/>
+        <person name="Quail M.A."/>
+        <person name="Urushihara H."/>
+        <person name="Hernandez J."/>
+        <person name="Rabbinowitsch E."/>
+        <person name="Steffen D."/>
+        <person name="Sanders M."/>
+        <person name="Ma J."/>
+        <person name="Kohara Y."/>
+        <person name="Sharp S."/>
+        <person name="Simmonds M.N."/>
+        <person name="Spiegler S."/>
+        <person name="Tivey A."/>
+        <person name="Sugano S."/>
+        <person name="White B."/>
+        <person name="Walker D."/>
+        <person name="Woodward J.R."/>
+        <person name="Winckler T."/>
+        <person name="Tanaka Y."/>
+        <person name="Shaulsky G."/>
+        <person name="Schleicher M."/>
+        <person name="Weinstock G.M."/>
+        <person name="Rosenthal A."/>
+        <person name="Cox E.C."/>
+        <person name="Chisholm R.L."/>
+        <person name="Gibbs R.A."/>
+        <person name="Loomis W.F."/>
+        <person name="Platzer M."/>
+        <person name="Kay R.R."/>
+        <person name="Williams J.G."/>
+        <person name="Dear P.H."/>
+        <person name="Noegel A.A."/>
+        <person name="Barrell B.G."/>
+        <person name="Kuspa A."/>
+      </authorList>
+      <dbReference type="PubMed" id="15875012"/>
+      <dbReference type="DOI" id="10.1038/nature03481"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]</scope>
+    <source>
+      <strain>AX4</strain>
+    </source>
+  </reference>
+  <reference key="4">
+    <citation type="journal article" date="1990" name="J. Cell Biol." volume="110" first="1549" last="1554">
+      <title>Surface cAMP receptors mediate multiple responses during development in Dictyostelium: evidenced by antisense mutagenesis.</title>
+      <authorList>
+        <person name="Sun T.J."/>
+        <person name="Van Haastert P.J.M."/>
+        <person name="Devreotes P.N."/>
+      </authorList>
+      <dbReference type="PubMed" id="1692327"/>
+      <dbReference type="DOI" id="10.1083/jcb.110.5.1549"/>
+    </citation>
+    <scope>FUNCTION</scope>
+    <scope>DEVELOPMENTAL STAGE</scope>
+  </reference>
+  <reference key="5">
+    <citation type="journal article" date="1991" name="Genes Dev." volume="5" first="1" last="8">
+      <title>Expression of a cAMP receptor gene of Dictyostelium and evidence for a multigene family.</title>
+      <authorList>
+        <person name="Saxe C.L. III"/>
+        <person name="Johnson R.L."/>
+        <person name="Devreotes P.N."/>
+        <person name="Kimmel A.R."/>
+      </authorList>
+      <dbReference type="PubMed" id="1989903"/>
+      <dbReference type="DOI" id="10.1101/gad.5.1.1"/>
+    </citation>
+    <scope>DEVELOPMENTAL STAGE</scope>
+  </reference>
+  <reference key="6">
+    <citation type="journal article" date="1991" name="Genes Dev." volume="5" first="572" last="582">
+      <title>Gene targeting of the aggregation stage cAMP receptor cAR1 in Dictyostelium.</title>
+      <authorList>
+        <person name="Sun T.J."/>
+        <person name="Devreotes P.N."/>
+      </authorList>
+      <dbReference type="PubMed" id="1849108"/>
+      <dbReference type="DOI" id="10.1101/gad.5.4.572"/>
+    </citation>
+    <scope>FUNCTION</scope>
+    <scope>DEVELOPMENTAL STAGE</scope>
+  </reference>
+  <reference key="7">
+    <citation type="journal article" date="1993" name="Proc. Natl. Acad. Sci. U.S.A." volume="90" first="5969" last="5973">
+      <title>Two transmembrane signaling mechanisms control expression of the cAMP receptor gene CAR1 during Dictyostelium development.</title>
+      <authorList>
+        <person name="Louis J.M."/>
+        <person name="Saxe C.L. III"/>
+        <person name="Kimmel A.R."/>
+      </authorList>
+      <dbReference type="PubMed" id="8392183"/>
+      <dbReference type="DOI" id="10.1073/pnas.90.13.5969"/>
+    </citation>
+    <scope>INDUCTION</scope>
+  </reference>
+  <reference key="8">
+    <citation type="journal article" date="1994" name="Development" volume="120" first="1997" last="2002">
+      <title>Extracellular cAMP can restore development in Dictyostelium cells lacking one, but not two subtypes of early cAMP receptors (cARs). Evidence for involvement of cAR1 in aggregative gene expression.</title>
+      <authorList>
+        <person name="Soede R.D.M."/>
+        <person name="Insall R.H."/>
+        <person name="Devreotes P.N."/>
+        <person name="Schaap P."/>
+      </authorList>
+      <dbReference type="PubMed" id="7925004"/>
+      <dbReference type="DOI" id="10.1242/dev.120.7.1997"/>
+    </citation>
+    <scope>FUNCTION</scope>
+  </reference>
+  <reference key="9">
+    <citation type="journal article" date="1994" name="FEBS Lett." volume="342" first="239" last="241">
+      <title>Precise expression of the cAMP receptor gene, CAR1, during transition from growth to differentiation in Dictyostelium discoideum.</title>
+      <authorList>
+        <person name="Abe F."/>
+        <person name="Maeda Y."/>
+      </authorList>
+      <dbReference type="PubMed" id="8150078"/>
+      <dbReference type="DOI" id="10.1016/0014-5793(94)80509-1"/>
+    </citation>
+    <scope>DEVELOPMENTAL STAGE</scope>
+  </reference>
+  <reference key="10">
+    <citation type="journal article" date="1994" name="J. Biol. Chem." volume="269" first="7036" last="7044">
+      <title>Localization of ligand-induced phosphorylation sites to serine clusters in the C-terminal domain of the Dictyostelium cAMP receptor, cAR1.</title>
+      <authorList>
+        <person name="Hereld D."/>
+        <person name="Vaughan R."/>
+        <person name="Kim J.-Y."/>
+        <person name="Borleis J.A."/>
+        <person name="Devreotes P.N."/>
+      </authorList>
+      <dbReference type="PubMed" id="8120068"/>
+      <dbReference type="DOI" id="10.1016/s0021-9258(17)37479-3"/>
+    </citation>
+    <scope>PHOSPHORYLATION</scope>
+    <scope>MUTAGENESIS OF SER-299; SER-302; SER-303; SER-304; SER-308; SER-324; SER-325; SER-331; 360-SER--SER-368; SER-383 AND SER-385</scope>
+  </reference>
+  <reference key="11">
+    <citation type="journal article" date="1995" name="J. Biol. Chem." volume="270" first="4418" last="4423">
+      <title>Occupancy of the Dictyostelium cAMP receptor, cAR1, induces a reduction in affinity which depends upon COOH-terminal serine residues.</title>
+      <authorList>
+        <person name="Caterina M.J."/>
+        <person name="Hereld D."/>
+        <person name="Devreotes P.N."/>
+      </authorList>
+      <dbReference type="PubMed" id="7876207"/>
+      <dbReference type="DOI" id="10.1074/jbc.270.9.4418"/>
+    </citation>
+    <scope>SUBCELLULAR LOCATION</scope>
+  </reference>
+  <reference key="12">
+    <citation type="journal article" date="1997" name="J. Cell Biol." volume="139" first="365" last="374">
+      <title>Dynamic distribution of chemoattractant receptors in living cells during chemotaxis and persistent stimulation.</title>
+      <authorList>
+        <person name="Xiao Z."/>
+        <person name="Zhang N."/>
+        <person name="Murphy D.B."/>
+        <person name="Devreotes P.N."/>
+      </authorList>
+      <dbReference type="PubMed" id="9334341"/>
+      <dbReference type="DOI" id="10.1083/jcb.139.2.365"/>
+    </citation>
+    <scope>SUBCELLULAR LOCATION</scope>
+  </reference>
+  <reference key="13">
+    <citation type="journal article" date="1995" name="J. Biol. Chem." volume="270" first="8667" last="8672">
+      <title>Agonist-induced loss of ligand binding is correlated with phosphorylation of cAR1, a G protein-coupled chemoattractant receptor from Dictyostelium.</title>
+      <authorList>
+        <person name="Caterina M.J."/>
+        <person name="Devreotes P.N."/>
+        <person name="Borleis J.A."/>
+        <person name="Hereld D."/>
+      </authorList>
+      <dbReference type="PubMed" id="7721769"/>
+      <dbReference type="DOI" id="10.1074/jbc.270.15.8667"/>
+    </citation>
+    <scope>PHOSPHORYLATION AT SER-302; SER-303 AND SER-304</scope>
+    <scope>MUTAGENESIS OF SER-299; SER-302; SER-303 AND SER-304</scope>
+  </reference>
+  <reference key="14">
+    <citation type="journal article" date="1997" name="J. Biol. Chem." volume="272" first="27313" last="27318">
+      <title>Phosphorylation of chemoattractant receptors is not essential for chemotaxis or termination of G-protein-mediated responses.</title>
+      <authorList>
+        <person name="Kim J.-Y."/>
+        <person name="Soede R.D.M."/>
+        <person name="Schaap P."/>
+        <person name="Valkema R."/>
+        <person name="Borleis J.A."/>
+        <person name="Van Haastert P.J.M."/>
+        <person name="Devreotes P.N."/>
+        <person name="Hereld D."/>
+      </authorList>
+      <dbReference type="PubMed" id="9341180"/>
+      <dbReference type="DOI" id="10.1074/jbc.272.43.27313"/>
+    </citation>
+    <scope>FUNCTION</scope>
+    <scope>MUTAGENESIS OF 288-LYS--ASN-392</scope>
+  </reference>
+  <reference key="15">
+    <citation type="journal article" date="1998" name="Dev. Biol." volume="197" first="117" last="128">
+      <title>Switching of chemoattractant receptors programs development and morphogenesis in Dictyostelium: receptor subtypes activate common responses at different agonist concentrations.</title>
+      <authorList>
+        <person name="Kim J.-Y."/>
+        <person name="Borleis J.A."/>
+        <person name="Devreotes P.N."/>
+      </authorList>
+      <dbReference type="PubMed" id="9578623"/>
+      <dbReference type="DOI" id="10.1006/dbio.1998.8882"/>
+    </citation>
+    <scope>FUNCTION</scope>
+    <scope>MUTAGENESIS OF ASN-148; VAL-154; SER-155; PHE-156 AND THR-157</scope>
+  </reference>
+  <reference key="16">
+    <citation type="journal article" date="1999" name="J. Biol. Chem." volume="274" first="1440" last="1448">
+      <title>Desensitization of G-protein-coupled receptors. agonist-induced phosphorylation of the chemoattractant receptor cAR1 lowers its intrinsic affinity for cAMP.</title>
+      <authorList>
+        <person name="Xiao Z."/>
+        <person name="Yao Y."/>
+        <person name="Long Y."/>
+        <person name="Devreotes P.N."/>
+      </authorList>
+      <dbReference type="PubMed" id="9880518"/>
+      <dbReference type="DOI" id="10.1074/jbc.274.3.1440"/>
+    </citation>
+    <scope>PHOSPHORYLATION</scope>
+  </reference>
+  <reference key="17">
+    <citation type="journal article" date="2001" name="Dev. Biol." volume="233" first="225" last="236">
+      <title>The phosphorylated C-terminus of cAR1 plays a role in cell-type-specific gene expression and STATa tyrosine phosphorylation.</title>
+      <authorList>
+        <person name="Briscoe C."/>
+        <person name="Moniakis J."/>
+        <person name="Kim J.-Y."/>
+        <person name="Brown J.M."/>
+        <person name="Hereld D."/>
+        <person name="Devreotes P.N."/>
+        <person name="Firtel R.A."/>
+      </authorList>
+      <dbReference type="PubMed" id="11319871"/>
+      <dbReference type="DOI" id="10.1006/dbio.2001.0217"/>
+    </citation>
+    <scope>FUNCTION</scope>
+  </reference>
+  <reference key="18">
+    <citation type="journal article" date="2001" name="Dev. Growth Differ." volume="43" first="275" last="283">
+      <title>Spatial expression patterns of genes involved in cyclic AMP responses in Dictyostelium discoideum development.</title>
+      <authorList>
+        <person name="Tsujioka M."/>
+        <person name="Yokoyama M."/>
+        <person name="Nishio K."/>
+        <person name="Kuwayama H."/>
+        <person name="Morio T."/>
+        <person name="Katoh M."/>
+        <person name="Urushihara H."/>
+        <person name="Saito T."/>
+        <person name="Ochiai H."/>
+        <person name="Tanaka Y."/>
+        <person name="Takeuchi I."/>
+        <person name="Maeda M."/>
+      </authorList>
+      <dbReference type="PubMed" id="11422293"/>
+      <dbReference type="DOI" id="10.1046/j.1440-169x.2001.00572.x"/>
+    </citation>
+    <scope>TISSUE SPECIFICITY</scope>
+    <scope>DEVELOPMENTAL STAGE</scope>
+  </reference>
+  <reference key="19">
+    <citation type="journal article" date="2001" name="J. Cell Sci." volume="114" first="2513" last="2523">
+      <title>cAMP receptor affinity controls wave dynamics, geometry and morphogenesis in Dictyostelium.</title>
+      <authorList>
+        <person name="Dormann D."/>
+        <person name="Kim J.-Y."/>
+        <person name="Devreotes P.N."/>
+        <person name="Weijer C.J."/>
+      </authorList>
+      <dbReference type="PubMed" id="11559759"/>
+      <dbReference type="DOI" id="10.1242/jcs.114.13.2513"/>
+    </citation>
+    <scope>FUNCTION</scope>
+  </reference>
+  <reference key="20">
+    <citation type="journal article" date="2002" name="Development" volume="129" first="1543" last="1552">
+      <title>A transcriptional profile of multicellular development in Dictyostelium discoideum.</title>
+      <authorList>
+        <person name="Van Driessche N."/>
+        <person name="Shaw C."/>
+        <person name="Katoh M."/>
+        <person name="Morio T."/>
+        <person name="Sucgang R."/>
+        <person name="Ibarra M."/>
+        <person name="Kuwayama H."/>
+        <person name="Saito T."/>
+        <person name="Urushihara H."/>
+        <person name="Maeda M."/>
+        <person name="Takeuchi I."/>
+        <person name="Ochiai H."/>
+        <person name="Eaton W."/>
+        <person name="Tollett J."/>
+        <person name="Halter J."/>
+        <person name="Kuspa A."/>
+        <person name="Tanaka Y."/>
+        <person name="Shaulsky G."/>
+      </authorList>
+      <dbReference type="PubMed" id="11923193"/>
+      <dbReference type="DOI" id="10.1242/dev.129.7.1543"/>
+    </citation>
+    <scope>DEVELOPMENTAL STAGE [LARGE SCALE ANALYSIS]</scope>
+  </reference>
+  <reference key="21">
+    <citation type="journal article" date="2003" name="Eukaryot. Cell" volume="2" first="627" last="637">
+      <title>Changing patterns of gene expression in Dictyostelium prestalk cell subtypes recognized by in situ hybridization with genes from microarray analyses.</title>
+      <authorList>
+        <person name="Maeda M."/>
+        <person name="Sakamoto H."/>
+        <person name="Iranfar N."/>
+        <person name="Fuller D."/>
+        <person name="Maruo T."/>
+        <person name="Ogihara S."/>
+        <person name="Morio T."/>
+        <person name="Urushihara H."/>
+        <person name="Tanaka Y."/>
+        <person name="Loomis W.F."/>
+      </authorList>
+      <dbReference type="PubMed" id="12796308"/>
+      <dbReference type="DOI" id="10.1128/ec.2.3.627-637.2003"/>
+    </citation>
+    <scope>DEVELOPMENTAL STAGE [LARGE SCALE ANALYSIS]</scope>
+  </reference>
+  <reference key="22">
+    <citation type="journal article" date="2003" name="Eukaryot. Cell" volume="2" first="664" last="670">
+      <title>Genome-wide expression analyses of gene regulation during early development of Dictyostelium discoideum.</title>
+      <authorList>
+        <person name="Iranfar N."/>
+        <person name="Fuller D."/>
+        <person name="Loomis W.F."/>
+      </authorList>
+      <dbReference type="PubMed" id="12912885"/>
+      <dbReference type="DOI" id="10.1128/ec.2.4.664-670.2003"/>
+    </citation>
+    <scope>DEVELOPMENTAL STAGE [LARGE SCALE ANALYSIS]</scope>
+  </reference>
+  <reference key="23">
+    <citation type="journal article" date="2004" name="Eukaryot. Cell" volume="3" first="1241" last="1248">
+      <title>Control of cell type proportioning in Dictyostelium discoideum by differentiation-inducing factor as determined by in situ hybridization.</title>
+      <authorList>
+        <person name="Maruo T."/>
+        <person name="Sakamoto H."/>
+        <person name="Iranfar N."/>
+        <person name="Fuller D."/>
+        <person name="Morio T."/>
+        <person name="Urushihara H."/>
+        <person name="Tanaka Y."/>
+        <person name="Maeda M."/>
+        <person name="Loomis W.F."/>
+      </authorList>
+      <dbReference type="PubMed" id="15470253"/>
+      <dbReference type="DOI" id="10.1128/ec.3.5.1241-1248.2004"/>
+    </citation>
+    <scope>DEVELOPMENTAL STAGE [LARGE SCALE ANALYSIS]</scope>
+  </reference>
+  <reference key="24">
+    <citation type="journal article" date="2005" name="Mol. Biol. Cell" volume="16" first="562" last="572">
+      <title>Constitutively active G protein-coupled receptor mutants block dictyostelium development.</title>
+      <authorList>
+        <person name="Zhang M."/>
+        <person name="Goswami M."/>
+        <person name="Hereld D."/>
+      </authorList>
+      <dbReference type="PubMed" id="15574880"/>
+      <dbReference type="DOI" id="10.1091/mbc.e04-06-0456"/>
+    </citation>
+    <scope>MUTAGENESIS OF LEU-100; ILE-102; ILE-104; VAL-136 AND ASN-225</scope>
+  </reference>
+  <reference key="25">
+    <citation type="journal article" date="2007" name="Mol. Microbiol." volume="65" first="508" last="520">
+      <title>Regulation of G protein-coupled cAMP receptor activation by a hydrophobic residue in transmembrane helix 3.</title>
+      <authorList>
+        <person name="Zhang M."/>
+        <person name="Goswami M."/>
+        <person name="Sawai S."/>
+        <person name="Cox E.C."/>
+        <person name="Hereld D."/>
+      </authorList>
+      <dbReference type="PubMed" id="17630977"/>
+      <dbReference type="DOI" id="10.1111/j.1365-2958.2007.05803.x"/>
+    </citation>
+    <scope>MUTAGENESIS OF ILE-104</scope>
+  </reference>
+  <comment type="function">
+    <text evidence="3 5 11 13 15 18 22 23">Receptor for cAMP. Coordinates the aggregation of individual cells into a multicellular organism and regulates the expression of a large number of developmentally regulated genes. The activity of this receptor is mediated by G proteins.</text>
+  </comment>
+  <comment type="subcellular location">
+    <subcellularLocation>
+      <location evidence="17 21">Membrane</location>
+      <topology evidence="17 21">Multi-pass membrane protein</topology>
+    </subcellularLocation>
+  </comment>
+  <comment type="developmental stage">
+    <text evidence="4 6 7 8 9 11 13 14 20">Expressed predominantly during early aggregation and at low levels during later stage.</text>
+  </comment>
+  <comment type="PTM">
+    <text evidence="16 19 24">C-terminal Ser or Thr residues may be phosphorylated.</text>
+  </comment>
+  <comment type="similarity">
+    <text evidence="25">Belongs to the G-protein coupled receptor 5 family.</text>
+  </comment>
+  <comment type="caution">
+    <text evidence="25">The gene for this protein is duplicated in strains AX3 and AX4. These strains contain a duplication of a segment of 750 kb of chromosome 2 compared to the corresponding sequence in strain AX2.</text>
+  </comment>
+  <dbReference type="EMBL" id="M21824">
+    <property type="protein sequence ID" value="AAA33177.1"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="AAFI02000010">
+    <property type="protein sequence ID" value="EAL70653.1"/>
+    <property type="molecule type" value="Genomic_DNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="AAFI02000010">
+    <property type="protein sequence ID" value="EAL70721.1"/>
+    <property type="molecule type" value="Genomic_DNA"/>
+  </dbReference>
+  <dbReference type="PIR" id="A41238">
+    <property type="entry name" value="A41238"/>
+  </dbReference>
+  <dbReference type="RefSeq" id="XP_644603.1">
+    <property type="nucleotide sequence ID" value="XM_639511.1"/>
+  </dbReference>
+  <dbReference type="RefSeq" id="XP_644648.1">
+    <property type="nucleotide sequence ID" value="XM_639556.1"/>
+  </dbReference>
+  <dbReference type="AlphaFoldDB" id="P13773"/>
+  <dbReference type="SMR" id="P13773"/>
+  <dbReference type="STRING" id="44689.P13773"/>
+  <dbReference type="TCDB" id="9.A.14.5.1">
+    <property type="family name" value="the g-protein-coupled receptor (gpcr) family"/>
+  </dbReference>
+  <dbReference type="GlyCosmos" id="P13773">
+    <property type="glycosylation" value="1 site, No reported glycans"/>
+  </dbReference>
+  <dbReference type="GlyGen" id="P13773">
+    <property type="glycosylation" value="1 site"/>
+  </dbReference>
+  <dbReference type="iPTMnet" id="P13773"/>
+  <dbReference type="PaxDb" id="44689-DDB0185024"/>
+  <dbReference type="GeneID" id="8618967"/>
+  <dbReference type="GeneID" id="8619010"/>
+  <dbReference type="KEGG" id="ddi:DDB_G0273397"/>
+  <dbReference type="KEGG" id="ddi:DDB_G0273533"/>
+  <dbReference type="dictyBase" id="DDB_G0273397">
+    <property type="gene designation" value="carA-1"/>
+  </dbReference>
+  <dbReference type="dictyBase" id="DDB_G0273533">
+    <property type="gene designation" value="carA-2"/>
+  </dbReference>
+  <dbReference type="VEuPathDB" id="AmoebaDB:DDB_G0273533"/>
+  <dbReference type="eggNOG" id="ENOG502RYGP">
+    <property type="taxonomic scope" value="Eukaryota"/>
+  </dbReference>
+  <dbReference type="HOGENOM" id="CLU_050319_0_0_1"/>
+  <dbReference type="InParanoid" id="P13773"/>
+  <dbReference type="OMA" id="IACFCAT"/>
+  <dbReference type="PhylomeDB" id="P13773"/>
+  <dbReference type="PRO" id="PR:P13773"/>
+  <dbReference type="Proteomes" id="UP000002195">
+    <property type="component" value="Chromosome 2"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0031252">
+    <property type="term" value="C:cell leading edge"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0009986">
+    <property type="term" value="C:cell surface"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0005829">
+    <property type="term" value="C:cytosol"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0005769">
+    <property type="term" value="C:early endosome"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0005886">
+    <property type="term" value="C:plasma membrane"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0010856">
+    <property type="term" value="F:adenylate cyclase activator activity"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0030552">
+    <property type="term" value="F:cAMP binding"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0001646">
+    <property type="term" value="F:cAMP receptor activity"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0001637">
+    <property type="term" value="F:G protein-coupled chemoattractant receptor activity"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0004930">
+    <property type="term" value="F:G protein-coupled receptor activity"/>
+    <property type="evidence" value="ECO:0000318"/>
+    <property type="project" value="GO_Central"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0030695">
+    <property type="term" value="F:GTPase regulator activity"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0140295">
+    <property type="term" value="F:pathogen-derived receptor ligand activity"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0030295">
+    <property type="term" value="F:protein kinase activator activity"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0023058">
+    <property type="term" value="P:adaptation of signaling pathway"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0140582">
+    <property type="term" value="P:adenylate cyclase-activating G protein-coupled cAMP receptor signaling pathway"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007189">
+    <property type="term" value="P:adenylate cyclase-activating G protein-coupled receptor signaling pathway"/>
+    <property type="evidence" value="ECO:0000318"/>
+    <property type="project" value="GO_Central"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0031152">
+    <property type="term" value="P:aggregation involved in sorocarp development"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="UniProtKB"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0097696">
+    <property type="term" value="P:cell surface receptor signaling pathway via STAT"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0019934">
+    <property type="term" value="P:cGMP-mediated signaling"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0006935">
+    <property type="term" value="P:chemotaxis"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0002029">
+    <property type="term" value="P:desensitization of G protein-coupled receptor signaling pathway"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="UniProtKB"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0070371">
+    <property type="term" value="P:ERK1 and ERK2 cascade"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0140676">
+    <property type="term" value="P:oscillatory cAMP signaling"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0008277">
+    <property type="term" value="P:regulation of G protein-coupled receptor signaling pathway"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="UniProtKB"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0050764">
+    <property type="term" value="P:regulation of phagocytosis"/>
+    <property type="evidence" value="ECO:0000315"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:1902168">
+    <property type="term" value="P:response to catechin"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:1904643">
+    <property type="term" value="P:response to curcumin"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:1903013">
+    <property type="term" value="P:response to differentiation-inducing factor 1"/>
+    <property type="evidence" value="ECO:0007005"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0010225">
+    <property type="term" value="P:response to UV-C"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="dictyBase"/>
+  </dbReference>
+  <dbReference type="CDD" id="cd14940">
+    <property type="entry name" value="7tmE_cAMP_R_Slime_mold"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="FunFam" id="1.20.1070.10:FF:000404">
+    <property type="entry name" value="Cyclic AMP receptor-like protein A"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="Gene3D" id="1.20.1070.10">
+    <property type="entry name" value="Rhodopsin 7-helix transmembrane proteins"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR022343">
+    <property type="entry name" value="GCR1-cAMP_receptor"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR017981">
+    <property type="entry name" value="GPCR_2-like_7TM"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR000848">
+    <property type="entry name" value="GPCR_cAMP"/>
+  </dbReference>
+  <dbReference type="PANTHER" id="PTHR23112:SF23">
+    <property type="entry name" value="CYCLIC AMP RECEPTOR 1-RELATED"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="PANTHER" id="PTHR23112">
+    <property type="entry name" value="G PROTEIN-COUPLED RECEPTOR 157-RELATED"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="Pfam" id="PF05462">
+    <property type="entry name" value="Dicty_CAR"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="PRINTS" id="PR02001">
+    <property type="entry name" value="GCR1CAMPR"/>
+  </dbReference>
+  <dbReference type="PRINTS" id="PR00247">
+    <property type="entry name" value="GPCRCAMP"/>
+  </dbReference>
+  <dbReference type="SUPFAM" id="SSF81321">
+    <property type="entry name" value="Family A G protein-coupled receptor-like"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="PROSITE" id="PS50261">
+    <property type="entry name" value="G_PROTEIN_RECEP_F2_4"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <proteinExistence type="evidence at protein level"/>
+  <keyword id="KW-0297">G-protein coupled receptor</keyword>
+  <keyword id="KW-0325">Glycoprotein</keyword>
+  <keyword id="KW-0472">Membrane</keyword>
+  <keyword id="KW-0597">Phosphoprotein</keyword>
+  <keyword id="KW-0675">Receptor</keyword>
+  <keyword id="KW-1185">Reference proteome</keyword>
+  <keyword id="KW-0807">Transducer</keyword>
+  <keyword id="KW-0812">Transmembrane</keyword>
+  <keyword id="KW-1133">Transmembrane helix</keyword>
+  <feature type="chain" id="PRO_0000195080" description="Cyclic AMP receptor 1">
+    <location>
+      <begin position="1"/>
+      <end position="392"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Extracellular" evidence="1">
+    <location>
+      <begin position="1"/>
+      <end position="13"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=1" evidence="1">
+    <location>
+      <begin position="14"/>
+      <end position="33"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Cytoplasmic" evidence="1">
+    <location>
+      <begin position="34"/>
+      <end position="47"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=2" evidence="1">
+    <location>
+      <begin position="48"/>
+      <end position="68"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Extracellular" evidence="1">
+    <location>
+      <begin position="69"/>
+      <end position="83"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=3" evidence="1">
+    <location>
+      <begin position="84"/>
+      <end position="109"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Cytoplasmic" evidence="1">
+    <location>
+      <begin position="110"/>
+      <end position="120"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=4" evidence="1">
+    <location>
+      <begin position="121"/>
+      <end position="139"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Extracellular" evidence="1">
+    <location>
+      <begin position="140"/>
+      <end position="162"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=5" evidence="1">
+    <location>
+      <begin position="163"/>
+      <end position="181"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Cytoplasmic" evidence="1">
+    <location>
+      <begin position="182"/>
+      <end position="205"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=6" evidence="1">
+    <location>
+      <begin position="206"/>
+      <end position="224"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Extracellular" evidence="1">
+    <location>
+      <begin position="225"/>
+      <end position="235"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=7" evidence="1">
+    <location>
+      <begin position="236"/>
+      <end position="260"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Cytoplasmic" evidence="1">
+    <location>
+      <begin position="261"/>
+      <end position="392"/>
+    </location>
+  </feature>
+  <feature type="region of interest" description="Disordered" evidence="2">
+    <location>
+      <begin position="292"/>
+      <end position="324"/>
+    </location>
+  </feature>
+  <feature type="region of interest" description="Disordered" evidence="2">
+    <location>
+      <begin position="339"/>
+      <end position="392"/>
+    </location>
+  </feature>
+  <feature type="compositionally biased region" description="Polar residues" evidence="2">
+    <location>
+      <begin position="298"/>
+      <end position="310"/>
+    </location>
+  </feature>
+  <feature type="compositionally biased region" description="Low complexity" evidence="2">
+    <location>
+      <begin position="340"/>
+      <end position="367"/>
+    </location>
+  </feature>
+  <feature type="compositionally biased region" description="Polar residues" evidence="2">
+    <location>
+      <begin position="375"/>
+      <end position="392"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="299"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="16">
+    <location>
+      <position position="302"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="16">
+    <location>
+      <position position="303"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="16">
+    <location>
+      <position position="304"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="308"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="360"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="361"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="362"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="363"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="364"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="366"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="367"/>
+    </location>
+  </feature>
+  <feature type="modified residue" description="Phosphoserine" evidence="1">
+    <location>
+      <position position="368"/>
+    </location>
+  </feature>
+  <feature type="glycosylation site" description="N-linked (GlcNAc...) asparagine" evidence="1">
+    <location>
+      <position position="10"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="In DN3; constitutive phosphorylation and greatly increased affinity for cAMP." evidence="10">
+    <original>L</original>
+    <variation>H</variation>
+    <location>
+      <position position="100"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="In DN2; constitutive phosphorylation and greatly increased affinity for cAMP; when associated with D-225." evidence="10">
+    <original>I</original>
+    <variation>T</variation>
+    <location>
+      <position position="102"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="In DN4; constitutive phosphorylation and greatly increased affinity for cAMP. In DN1; Constitutive phosphorylation and greatly increased affinity for cAMP; when associated with A-136." evidence="10 12">
+    <original>I</original>
+    <variation>N</variation>
+    <location>
+      <position position="104"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Most substitutions increase affinity for cAMP and the most polar substitutions block development." evidence="10 12">
+    <original>I</original>
+    <variation>X</variation>
+    <location>
+      <position position="104"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="In DN1; constitutive phosphorylation and greatly increased affinity for cAMP; when associated with N-104." evidence="10">
+    <original>V</original>
+    <variation>A</variation>
+    <location>
+      <position position="136"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Reduces the affinity for cAMP by 100 to 1000-fold when associated with D-154; N-155; Y-156 and D-157." evidence="23">
+    <original>N</original>
+    <variation>G</variation>
+    <location>
+      <position position="148"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Reduces the affinity for cAMP by 100 to 1000-fold when associated with G-148; N-155; Y-156 and D-157." evidence="23">
+    <original>V</original>
+    <variation>D</variation>
+    <location>
+      <position position="154"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Reduces the affinity for cAMP by 100 to 1000-fold when associated with G-148; D-154; Y-156 and D-157." evidence="23">
+    <original>S</original>
+    <variation>N</variation>
+    <location>
+      <position position="155"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Reduces the affinity for cAMP by 100 to 1000-fold when associated with G-148; D-154; N-155 and D-157." evidence="23">
+    <original>F</original>
+    <variation>Y</variation>
+    <location>
+      <position position="156"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Reduces the affinity for cAMP by 100 to 1000-fold when associated with G-148; D-154; N-155 and Y-156." evidence="23">
+    <original>T</original>
+    <variation>D</variation>
+    <location>
+      <position position="157"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="In DN2; constitutive phosphorylation and greatly increased affinity for cAMP; when associated with T-102." evidence="10">
+    <original>N</original>
+    <variation>D</variation>
+    <location>
+      <position position="225"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="No effect on cAMP-dependent gene expression, chemotaxis, aggregation and differentiation." evidence="22">
+    <location>
+      <begin position="288"/>
+      <end position="392"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Greatly reduces ligand induced phosphorylation; when associated with G-302; A-303; G-304 and A-308." evidence="16 19">
+    <original>S</original>
+    <variation>A</variation>
+    <location>
+      <position position="299"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Greatly reduces ligand induced phosphorylation; when associated with A-299; A-303; G-304 and A-308." evidence="16 19">
+    <original>S</original>
+    <variation>G</variation>
+    <location>
+      <position position="302"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Greatly reduces ligand induced phosphorylation; when associated with A-299; G-302; G-304 and A-308." evidence="16 19">
+    <original>S</original>
+    <variation>A</variation>
+    <location>
+      <position position="303"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Greatly reduces ligand induced phosphorylation; when associated with A-299; G-302; A-303 and A-308." evidence="16 19">
+    <original>S</original>
+    <variation>G</variation>
+    <location>
+      <position position="304"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Greatly reduces ligand induced phosphorylation; when associated with A-299; G-302; A-303 and G-304." evidence="19">
+    <original>S</original>
+    <variation>A</variation>
+    <location>
+      <position position="308"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Slightly reduces ligand induced and basal phosphorylation; when associated with A-325 and A-331." evidence="19">
+    <original>S</original>
+    <variation>G</variation>
+    <location>
+      <position position="324"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Slightly reduces ligand induced and basal phosphorylation; when associated with G-324 and A-331." evidence="19">
+    <original>S</original>
+    <variation>A</variation>
+    <location>
+      <position position="325"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Slightly reduces ligand induced and basal phosphorylation; when associated with G-324 and A-325." evidence="19">
+    <original>S</original>
+    <variation>A</variation>
+    <location>
+      <position position="331"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="Greatly reduces basal phosphorylation." evidence="19">
+    <location>
+      <begin position="360"/>
+      <end position="368"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="No effect on phosphorylation." evidence="19">
+    <original>S</original>
+    <variation>A</variation>
+    <location>
+      <position position="383"/>
+    </location>
+  </feature>
+  <feature type="mutagenesis site" description="No effect on phosphorylation." evidence="19">
+    <original>S</original>
+    <variation>A</variation>
+    <location>
+      <position position="385"/>
+    </location>
+  </feature>
+  <evidence type="ECO:0000255" key="1"/>
+  <evidence type="ECO:0000256" key="2">
+    <source>
+      <dbReference type="SAM" id="MobiDB-lite"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="3">
+    <source>
+      <dbReference type="PubMed" id="11319871"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="4">
+    <source>
+      <dbReference type="PubMed" id="11422293"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="5">
+    <source>
+      <dbReference type="PubMed" id="11559759"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="6">
+    <source>
+      <dbReference type="PubMed" id="11923193"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="7">
+    <source>
+      <dbReference type="PubMed" id="12796308"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="8">
+    <source>
+      <dbReference type="PubMed" id="12912885"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="9">
+    <source>
+      <dbReference type="PubMed" id="15470253"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="10">
+    <source>
+      <dbReference type="PubMed" id="15574880"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="11">
+    <source>
+      <dbReference type="PubMed" id="1692327"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="12">
+    <source>
+      <dbReference type="PubMed" id="17630977"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="13">
+    <source>
+      <dbReference type="PubMed" id="1849108"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="14">
+    <source>
+      <dbReference type="PubMed" id="1989903"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="15">
+    <source>
+      <dbReference type="PubMed" id="3047871"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="16">
+    <source>
+      <dbReference type="PubMed" id="7721769"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="17">
+    <source>
+      <dbReference type="PubMed" id="7876207"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="18">
+    <source>
+      <dbReference type="PubMed" id="7925004"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="19">
+    <source>
+      <dbReference type="PubMed" id="8120068"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="20">
+    <source>
+      <dbReference type="PubMed" id="8150078"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="21">
+    <source>
+      <dbReference type="PubMed" id="9334341"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="22">
+    <source>
+      <dbReference type="PubMed" id="9341180"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="23">
+    <source>
+      <dbReference type="PubMed" id="9578623"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="24">
+    <source>
+      <dbReference type="PubMed" id="9880518"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000305" key="25"/>
+  <sequence length="392" mass="44312" checksum="38C4561EE1CC9A69" modified="1990-01-01" version="1">MGLLDGNPANETSLVLLLFADFSSMLGCMAVLIGFWRLKLLRNHVTKVIACFCATSFCKDFPSTILTLTNTAVNGGFPCYLYAIVITYGSFACWLWTLCLAISIYMLIVKREPEPERFEKYYYLLCWGLPLISTIVMLAKNTVQFVGNWCWIGVSFTGYRFGLFYGPFLFIWAISAVLVGLTSRYTYVVIHNGVSDNKEKHLTYQFKLINYIIVFLVCWVFAVVNRIVNGLNMFPPALNILHTYLSVSHGFWASVTFIYNNPLMWRYFGAKILTVFTFFGYFTDVQKKLEKNKNNNNPSPYSSSRGTSGKTMGGHPTGDDVQCSSDMEQCSLERHPNMVNNQQNLNNNYGLQQNYNDEGSSSSSLSSSDEEKQTVEMQNIQISTSTNGQGNN</sequence>
+</entry>
+<copyright>
+Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms Distributed under the Creative Commons Attribution (CC BY 4.0) License
+</copyright>
+</uniprot>

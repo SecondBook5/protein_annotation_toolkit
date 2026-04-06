@@ -1,0 +1,5 @@
+UniProt: P29274
+UniProt: P13773
+UniProt: P41595
+UniProt: Q02293
+UniProt: Q63357

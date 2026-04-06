@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # PostgreSQL database
+  postgres:
+    image: postgres:16
+    container_name: pat_postgres
+    environment:
+      POSTGRES_USER: pat_user
+      POSTGRES_PASSWORD: pat_password
+      POSTGRES_DB: protein_annotation_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init_db.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pat_user -d protein_annotation_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis cache (optional - comment out if not needed)
+  redis:
+    image: redis:7-alpine
+    container_name: pat_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  postgres_data:
+  redis_data:

@@ -1,0 +1,2418 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="no" ?>
+<uniprot xmlns="http://uniprot.org/uniprot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uniprot.org/uniprot http://www.uniprot.org/docs/uniprot.xsd">
+<entry dataset="Swiss-Prot" created="1992-12-01" modified="2026-01-28" version="240" xmlns="http://uniprot.org/uniprot">
+  <accession>P29274</accession>
+  <accession>B2R7E0</accession>
+  <name>AA2AR_HUMAN</name>
+  <protein>
+    <recommendedName>
+      <fullName>Adenosine receptor A2a</fullName>
+    </recommendedName>
+  </protein>
+  <gene>
+    <name type="primary">ADORA2A</name>
+    <name type="synonym">ADORA2</name>
+  </gene>
+  <organism>
+    <name type="scientific">Homo sapiens</name>
+    <name type="common">Human</name>
+    <dbReference type="NCBI Taxonomy" id="9606"/>
+    <lineage>
+      <taxon>Eukaryota</taxon>
+      <taxon>Metazoa</taxon>
+      <taxon>Chordata</taxon>
+      <taxon>Craniata</taxon>
+      <taxon>Vertebrata</taxon>
+      <taxon>Euteleostomi</taxon>
+      <taxon>Mammalia</taxon>
+      <taxon>Eutheria</taxon>
+      <taxon>Euarchontoglires</taxon>
+      <taxon>Primates</taxon>
+      <taxon>Haplorrhini</taxon>
+      <taxon>Catarrhini</taxon>
+      <taxon>Hominidae</taxon>
+      <taxon>Homo</taxon>
+    </lineage>
+  </organism>
+  <reference key="1">
+    <citation type="submission" date="1992-07" db="EMBL/GenBank/DDBJ databases">
+      <authorList>
+        <person name="Tiffany H.L."/>
+        <person name="Murphy P.M."/>
+      </authorList>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [MRNA]</scope>
+  </reference>
+  <reference key="2">
+    <citation type="submission" date="1992-09" db="EMBL/GenBank/DDBJ databases">
+      <authorList>
+        <person name="Salvatore C.A."/>
+        <person name="Luneau C.J."/>
+        <person name="Johnson R.G."/>
+        <person name="Jacobson M."/>
+      </authorList>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [MRNA]</scope>
+    <source>
+      <tissue>Brain</tissue>
+    </source>
+  </reference>
+  <reference key="3">
+    <citation type="journal article" date="1992" name="Brain Res. Mol. Brain Res." volume="15" first="62" last="66">
+      <title>Molecular characterization of a human brain adenosine A2 receptor.</title>
+      <authorList>
+        <person name="Furlong T.J."/>
+        <person name="Pierce K.D."/>
+        <person name="Selbie L.A."/>
+        <person name="Shine J."/>
+      </authorList>
+      <dbReference type="PubMed" id="1331670"/>
+      <dbReference type="DOI" id="10.1016/0169-328x(92)90152-2"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [MRNA]</scope>
+    <source>
+      <tissue>Hippocampus</tissue>
+    </source>
+  </reference>
+  <reference key="4">
+    <citation type="journal article" date="1996" name="Biochem. Biophys. Res. Commun." volume="223" first="461" last="467">
+      <title>Characterization and chromosomal localization of the human A2a adenosine receptor gene: ADORA2A.</title>
+      <authorList>
+        <person name="Le F."/>
+        <person name="Townsend-Nicholson A."/>
+        <person name="Baker E."/>
+        <person name="Sutherland G.R."/>
+        <person name="Schofield P.R."/>
+      </authorList>
+      <dbReference type="PubMed" id="8670304"/>
+      <dbReference type="DOI" id="10.1006/bbrc.1996.0916"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [GENOMIC DNA]</scope>
+  </reference>
+  <reference key="5">
+    <citation type="submission" date="2002-07" db="EMBL/GenBank/DDBJ databases">
+      <title>cDNA clones of human proteins involved in signal transduction sequenced by the Guthrie cDNA resource center (www.cdna.org).</title>
+      <authorList>
+        <person name="Puhl H.L. III"/>
+        <person name="Ikeda S.R."/>
+        <person name="Aronstam R.S."/>
+      </authorList>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]</scope>
+  </reference>
+  <reference key="6">
+    <citation type="journal article" date="2004" name="Genome Biol." volume="5" first="R84.1" last="R84.11">
+      <title>A genome annotation-driven approach to cloning the human ORFeome.</title>
+      <authorList>
+        <person name="Collins J.E."/>
+        <person name="Wright C.L."/>
+        <person name="Edwards C.A."/>
+        <person name="Davis M.P."/>
+        <person name="Grinham J.A."/>
+        <person name="Cole C.G."/>
+        <person name="Goward M.E."/>
+        <person name="Aguado B."/>
+        <person name="Mallya M."/>
+        <person name="Mokrab Y."/>
+        <person name="Huckle E.J."/>
+        <person name="Beare D.M."/>
+        <person name="Dunham I."/>
+      </authorList>
+      <dbReference type="PubMed" id="15461802"/>
+      <dbReference type="DOI" id="10.1186/gb-2004-5-10-r84"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]</scope>
+  </reference>
+  <reference key="7">
+    <citation type="submission" date="2003-05" db="EMBL/GenBank/DDBJ databases">
+      <title>Cloning of human full-length CDSs in BD Creator(TM) system donor vector.</title>
+      <authorList>
+        <person name="Kalnine N."/>
+        <person name="Chen X."/>
+        <person name="Rolfs A."/>
+        <person name="Halleck A."/>
+        <person name="Hines L."/>
+        <person name="Eisenstein S."/>
+        <person name="Koundinya M."/>
+        <person name="Raphael J."/>
+        <person name="Moreira D."/>
+        <person name="Kelley T."/>
+        <person name="LaBaer J."/>
+        <person name="Lin Y."/>
+        <person name="Phelan M."/>
+        <person name="Farmer A."/>
+      </authorList>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]</scope>
+  </reference>
+  <reference key="8">
+    <citation type="journal article" date="2004" name="Nat. Genet." volume="36" first="40" last="45">
+      <title>Complete sequencing and characterization of 21,243 full-length human cDNAs.</title>
+      <authorList>
+        <person name="Ota T."/>
+        <person name="Suzuki Y."/>
+        <person name="Nishikawa T."/>
+        <person name="Otsuki T."/>
+        <person name="Sugiyama T."/>
+        <person name="Irie R."/>
+        <person name="Wakamatsu A."/>
+        <person name="Hayashi K."/>
+        <person name="Sato H."/>
+        <person name="Nagai K."/>
+        <person name="Kimura K."/>
+        <person name="Makita H."/>
+        <person name="Sekine M."/>
+        <person name="Obayashi M."/>
+        <person name="Nishi T."/>
+        <person name="Shibahara T."/>
+        <person name="Tanaka T."/>
+        <person name="Ishii S."/>
+        <person name="Yamamoto J."/>
+        <person name="Saito K."/>
+        <person name="Kawai Y."/>
+        <person name="Isono Y."/>
+        <person name="Nakamura Y."/>
+        <person name="Nagahari K."/>
+        <person name="Murakami K."/>
+        <person name="Yasuda T."/>
+        <person name="Iwayanagi T."/>
+        <person name="Wagatsuma M."/>
+        <person name="Shiratori A."/>
+        <person name="Sudo H."/>
+        <person name="Hosoiri T."/>
+        <person name="Kaku Y."/>
+        <person name="Kodaira H."/>
+        <person name="Kondo H."/>
+        <person name="Sugawara M."/>
+        <person name="Takahashi M."/>
+        <person name="Kanda K."/>
+        <person name="Yokoi T."/>
+        <person name="Furuya T."/>
+        <person name="Kikkawa E."/>
+        <person name="Omura Y."/>
+        <person name="Abe K."/>
+        <person name="Kamihara K."/>
+        <person name="Katsuta N."/>
+        <person name="Sato K."/>
+        <person name="Tanikawa M."/>
+        <person name="Yamazaki M."/>
+        <person name="Ninomiya K."/>
+        <person name="Ishibashi T."/>
+        <person name="Yamashita H."/>
+        <person name="Murakawa K."/>
+        <person name="Fujimori K."/>
+        <person name="Tanai H."/>
+        <person name="Kimata M."/>
+        <person name="Watanabe M."/>
+        <person name="Hiraoka S."/>
+        <person name="Chiba Y."/>
+        <person name="Ishida S."/>
+        <person name="Ono Y."/>
+        <person name="Takiguchi S."/>
+        <person name="Watanabe S."/>
+        <person name="Yosida M."/>
+        <person name="Hotuta T."/>
+        <person name="Kusano J."/>
+        <person name="Kanehori K."/>
+        <person name="Takahashi-Fujii A."/>
+        <person name="Hara H."/>
+        <person name="Tanase T.-O."/>
+        <person name="Nomura Y."/>
+        <person name="Togiya S."/>
+        <person name="Komai F."/>
+        <person name="Hara R."/>
+        <person name="Takeuchi K."/>
+        <person name="Arita M."/>
+        <person name="Imose N."/>
+        <person name="Musashino K."/>
+        <person name="Yuuki H."/>
+        <person name="Oshima A."/>
+        <person name="Sasaki N."/>
+        <person name="Aotsuka S."/>
+        <person name="Yoshikawa Y."/>
+        <person name="Matsunawa H."/>
+        <person name="Ichihara T."/>
+        <person name="Shiohata N."/>
+        <person name="Sano S."/>
+        <person name="Moriya S."/>
+        <person name="Momiyama H."/>
+        <person name="Satoh N."/>
+        <person name="Takami S."/>
+        <person name="Terashima Y."/>
+        <person name="Suzuki O."/>
+        <person name="Nakagawa S."/>
+        <person name="Senoh A."/>
+        <person name="Mizoguchi H."/>
+        <person name="Goto Y."/>
+        <person name="Shimizu F."/>
+        <person name="Wakebe H."/>
+        <person name="Hishigaki H."/>
+        <person name="Watanabe T."/>
+        <person name="Sugiyama A."/>
+        <person name="Takemoto M."/>
+        <person name="Kawakami B."/>
+        <person name="Yamazaki M."/>
+        <person name="Watanabe K."/>
+        <person name="Kumagai A."/>
+        <person name="Itakura S."/>
+        <person name="Fukuzumi Y."/>
+        <person name="Fujimori Y."/>
+        <person name="Komiyama M."/>
+        <person name="Tashiro H."/>
+        <person name="Tanigami A."/>
+        <person name="Fujiwara T."/>
+        <person name="Ono T."/>
+        <person name="Yamada K."/>
+        <person name="Fujii Y."/>
+        <person name="Ozaki K."/>
+        <person name="Hirao M."/>
+        <person name="Ohmori Y."/>
+        <person name="Kawabata A."/>
+        <person name="Hikiji T."/>
+        <person name="Kobatake N."/>
+        <person name="Inagaki H."/>
+        <person name="Ikema Y."/>
+        <person name="Okamoto S."/>
+        <person name="Okitani R."/>
+        <person name="Kawakami T."/>
+        <person name="Noguchi S."/>
+        <person name="Itoh T."/>
+        <person name="Shigeta K."/>
+        <person name="Senba T."/>
+        <person name="Matsumura K."/>
+        <person name="Nakajima Y."/>
+        <person name="Mizuno T."/>
+        <person name="Morinaga M."/>
+        <person name="Sasaki M."/>
+        <person name="Togashi T."/>
+        <person name="Oyama M."/>
+        <person name="Hata H."/>
+        <person name="Watanabe M."/>
+        <person name="Komatsu T."/>
+        <person name="Mizushima-Sugano J."/>
+        <person name="Satoh T."/>
+        <person name="Shirai Y."/>
+        <person name="Takahashi Y."/>
+        <person name="Nakagawa K."/>
+        <person name="Okumura K."/>
+        <person name="Nagase T."/>
+        <person name="Nomura N."/>
+        <person name="Kikuchi H."/>
+        <person name="Masuho Y."/>
+        <person name="Yamashita R."/>
+        <person name="Nakai K."/>
+        <person name="Yada T."/>
+        <person name="Nakamura Y."/>
+        <person name="Ohara O."/>
+        <person name="Isogai T."/>
+        <person name="Sugano S."/>
+      </authorList>
+      <dbReference type="PubMed" id="14702039"/>
+      <dbReference type="DOI" id="10.1038/ng1285"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]</scope>
+    <source>
+      <tissue>Thymus</tissue>
+    </source>
+  </reference>
+  <reference key="9">
+    <citation type="submission" date="2005-07" db="EMBL/GenBank/DDBJ databases">
+      <authorList>
+        <person name="Mural R.J."/>
+        <person name="Istrail S."/>
+        <person name="Sutton G.G."/>
+        <person name="Florea L."/>
+        <person name="Halpern A.L."/>
+        <person name="Mobarry C.M."/>
+        <person name="Lippert R."/>
+        <person name="Walenz B."/>
+        <person name="Shatkay H."/>
+        <person name="Dew I."/>
+        <person name="Miller J.R."/>
+        <person name="Flanigan M.J."/>
+        <person name="Edwards N.J."/>
+        <person name="Bolanos R."/>
+        <person name="Fasulo D."/>
+        <person name="Halldorsson B.V."/>
+        <person name="Hannenhalli S."/>
+        <person name="Turner R."/>
+        <person name="Yooseph S."/>
+        <person name="Lu F."/>
+        <person name="Nusskern D.R."/>
+        <person name="Shue B.C."/>
+        <person name="Zheng X.H."/>
+        <person name="Zhong F."/>
+        <person name="Delcher A.L."/>
+        <person name="Huson D.H."/>
+        <person name="Kravitz S.A."/>
+        <person name="Mouchard L."/>
+        <person name="Reinert K."/>
+        <person name="Remington K.A."/>
+        <person name="Clark A.G."/>
+        <person name="Waterman M.S."/>
+        <person name="Eichler E.E."/>
+        <person name="Adams M.D."/>
+        <person name="Hunkapiller M.W."/>
+        <person name="Myers E.W."/>
+        <person name="Venter J.C."/>
+      </authorList>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]</scope>
+  </reference>
+  <reference key="10">
+    <citation type="journal article" date="2004" name="Genome Res." volume="14" first="2121" last="2127">
+      <title>The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).</title>
+      <authorList>
+        <consortium name="The MGC Project Team"/>
+      </authorList>
+      <dbReference type="PubMed" id="15489334"/>
+      <dbReference type="DOI" id="10.1101/gr.2596504"/>
+    </citation>
+    <scope>NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]</scope>
+    <source>
+      <tissue>Lymph</tissue>
+    </source>
+  </reference>
+  <reference key="11">
+    <citation type="journal article" date="2007" name="Mol. Cell. Neurosci." volume="36" first="1" last="12">
+      <title>The neuronal Ca(2+) -binding protein 2 (NECAB2) interacts with the adenosine A(2A) receptor and modulates the cell surface expression and function of the receptor.</title>
+      <authorList>
+        <person name="Canela L."/>
+        <person name="Lujan R."/>
+        <person name="Lluis C."/>
+        <person name="Burgueno J."/>
+        <person name="Mallol J."/>
+        <person name="Canela E.I."/>
+        <person name="Franco R."/>
+        <person name="Ciruela F."/>
+      </authorList>
+      <dbReference type="PubMed" id="17689978"/>
+      <dbReference type="DOI" id="10.1016/j.mcn.2007.05.007"/>
+    </citation>
+    <scope>INTERACTION WITH NECAB2</scope>
+  </reference>
+  <reference key="12">
+    <citation type="journal article" date="2010" name="J. Recept. Signal Transduct." volume="30" first="331" last="336">
+      <title>The dopamine D(4) receptor, the ultimate disordered protein.</title>
+      <authorList>
+        <person name="Woods A.S."/>
+      </authorList>
+      <dbReference type="PubMed" id="20836733"/>
+      <dbReference type="DOI" id="10.3109/10799893.2010.513842"/>
+    </citation>
+    <scope>POSSIBLE INTERACTION WITH DRD4</scope>
+  </reference>
+  <reference key="13">
+    <citation type="journal article" date="1995" name="J. Biol. Chem." volume="270" first="13987" last="13997">
+      <title>Site-directed mutagenesis identifies residues involved in ligand recognition in the human A2a adenosine receptor.</title>
+      <authorList>
+        <person name="Kim J."/>
+        <person name="Wess J."/>
+        <person name="van Rhee A.M."/>
+        <person name="Schoneberg T."/>
+        <person name="Jacobson K.A."/>
+      </authorList>
+      <dbReference type="PubMed" id="7775460"/>
+      <dbReference type="DOI" id="10.1074/jbc.270.23.13987"/>
+    </citation>
+    <scope>3D-STRUCTURE MODELING OF TRANSMEMBRANE DOMAINS</scope>
+  </reference>
+  <reference key="14">
+    <citation type="journal article" date="2006" name="Mol. Pharmacol." volume="69" first="1083" last="1094">
+      <title>The ubiquitin-specific protease Usp4 regulates the cell surface level of the A2A receptor.</title>
+      <authorList>
+        <person name="Milojevic T."/>
+        <person name="Reiterer V."/>
+        <person name="Stefan E."/>
+        <person name="Korkhov V.M."/>
+        <person name="Dorostkar M.M."/>
+        <person name="Ducza E."/>
+        <person name="Ogris E."/>
+        <person name="Boehm S."/>
+        <person name="Freissmuth M."/>
+        <person name="Nanoff C."/>
+      </authorList>
+      <dbReference type="PubMed" id="16339847"/>
+      <dbReference type="DOI" id="10.1124/mol.105.015818"/>
+    </citation>
+    <scope>INTERACTION WITH USP4</scope>
+    <scope>UBIQUITINATION</scope>
+    <scope>DEUBIQUITINATION BY USP4</scope>
+  </reference>
+  <reference key="15">
+    <citation type="journal article" date="2008" name="Science" volume="322" first="1211" last="1217">
+      <title>The 2.6 angstrom crystal structure of a human A2A adenosine receptor bound to an antagonist.</title>
+      <authorList>
+        <person name="Jaakola V.-P."/>
+        <person name="Griffith M.T."/>
+        <person name="Hanson M.A."/>
+        <person name="Cherezov V."/>
+        <person name="Chien E.Y.T."/>
+        <person name="Lane J.R."/>
+        <person name="Ijzerman A.P."/>
+        <person name="Stevens R.C."/>
+      </authorList>
+      <dbReference type="PubMed" id="18832607"/>
+      <dbReference type="DOI" id="10.1126/science.1164772"/>
+    </citation>
+    <scope>X-RAY CRYSTALLOGRAPHY (2.60 ANGSTROMS) OF 2-316 IN COMPLEX WITH ANTAGONIST</scope>
+    <scope>TOPOLOGY</scope>
+    <scope>DISULFIDE BONDS</scope>
+  </reference>
+  <reference evidence="12 13" key="16">
+    <citation type="journal article" date="2011" name="Nature" volume="474" first="521" last="525">
+      <title>Agonist-bound adenosine A2A receptor structures reveal common features of GPCR activation.</title>
+      <authorList>
+        <person name="Lebon G."/>
+        <person name="Warne T."/>
+        <person name="Edwards P.C."/>
+        <person name="Bennett K."/>
+        <person name="Langmead C.J."/>
+        <person name="Leslie A.G."/>
+        <person name="Tate C.G."/>
+      </authorList>
+      <dbReference type="PubMed" id="21593763"/>
+      <dbReference type="DOI" id="10.1038/nature10136"/>
+    </citation>
+    <scope>X-RAY CRYSTALLOGRAPHY (2.60 ANGSTROMS) OF 1-317 IN COMPLEXES WITH ENDOGENOUS AGONIST ADENOSINE AND SYNTHETIC AGONIST NECA</scope>
+  </reference>
+  <reference key="17">
+    <citation type="journal article" date="1999" name="Nat. Genet." volume="22" first="231" last="238">
+      <title>Characterization of single-nucleotide polymorphisms in coding regions of human genes.</title>
+      <authorList>
+        <person name="Cargill M."/>
+        <person name="Altshuler D."/>
+        <person name="Ireland J."/>
+        <person name="Sklar P."/>
+        <person name="Ardlie K."/>
+        <person name="Patil N."/>
+        <person name="Shaw N."/>
+        <person name="Lane C.R."/>
+        <person name="Lim E.P."/>
+        <person name="Kalyanaraman N."/>
+        <person name="Nemesh J."/>
+        <person name="Ziaugra L."/>
+        <person name="Friedland L."/>
+        <person name="Rolfe A."/>
+        <person name="Warrington J."/>
+        <person name="Lipshutz R."/>
+        <person name="Daley G.Q."/>
+        <person name="Lander E.S."/>
+      </authorList>
+      <dbReference type="PubMed" id="10391209"/>
+      <dbReference type="DOI" id="10.1038/10290"/>
+    </citation>
+    <scope>VARIANT VAL-50</scope>
+  </reference>
+  <reference key="18">
+    <citation type="journal article" date="1999" name="Nat. Genet." volume="23" first="373" last="373">
+      <authorList>
+        <person name="Cargill M."/>
+        <person name="Altshuler D."/>
+        <person name="Ireland J."/>
+        <person name="Sklar P."/>
+        <person name="Ardlie K."/>
+        <person name="Patil N."/>
+        <person name="Shaw N."/>
+        <person name="Lane C.R."/>
+        <person name="Lim E.P."/>
+        <person name="Kalyanaraman N."/>
+        <person name="Nemesh J."/>
+        <person name="Ziaugra L."/>
+        <person name="Friedland L."/>
+        <person name="Rolfe A."/>
+        <person name="Warrington J."/>
+        <person name="Lipshutz R."/>
+        <person name="Daley G.Q."/>
+        <person name="Lander E.S."/>
+      </authorList>
+    </citation>
+    <scope>ERRATUM OF PUBMED:10391209</scope>
+  </reference>
+  <comment type="function">
+    <text evidence="1">Receptor for adenosine (By similarity). The activity of this receptor is mediated by G proteins which activate adenylyl cyclase (By similarity).</text>
+  </comment>
+  <comment type="subunit">
+    <text evidence="2 7 8 9">Interacts (via cytoplasmic C-terminal domain) with USP4; the interaction is direct (PubMed:16339847). May interact with DRD4 (PubMed:18832607). Interacts with NECAB2 (PubMed:17689978). Interacts (via cytoplasmic C-terminal domain) with GAS2L2; interaction enhances receptor-mediated adenylyl cyclase activity (By similarity).</text>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-2903663">
+      <id>P30542</id>
+      <label>ADORA1</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>4</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+      <label>ADORA2A</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>8</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-3904751">
+      <id>P29275</id>
+      <label>ADORA2B</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>5</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-749204">
+      <id>O15155</id>
+      <label>BET1</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>3</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-2909859">
+      <id>P21554</id>
+      <label>CNR1</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>8</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-448974">
+      <id>Q99418</id>
+      <label>CYTH2</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>6</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-15639515">
+      <id>O15354</id>
+      <label>GPR37</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>3</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-950070">
+      <id>Q7Z6G3</id>
+      <label>NECAB2</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>6</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-12187159">
+      <id>O43759-2</id>
+      <label>SYNGR1</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>3</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-723290">
+      <id>Q13107</id>
+      <label>USP4</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>4</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-22114623">
+      <id>Q5T9L3-1</id>
+      <label>WLS</label>
+    </interactant>
+    <organismsDiffer>false</organismsDiffer>
+    <experiments>3</experiments>
+  </comment>
+  <comment type="interaction">
+    <interactant intactId="EBI-2902702">
+      <id>P29274</id>
+    </interactant>
+    <interactant intactId="EBI-2902778">
+      <id>P31424-1</id>
+      <label>Grm5</label>
+    </interactant>
+    <organismsDiffer>true</organismsDiffer>
+    <experiments>3</experiments>
+  </comment>
+  <comment type="subcellular location">
+    <subcellularLocation>
+      <location evidence="2">Cell membrane</location>
+      <topology evidence="2">Multi-pass membrane protein</topology>
+    </subcellularLocation>
+    <text evidence="2">Colocalizes with GAS2L2 at neuronal processes.</text>
+  </comment>
+  <comment type="domain">
+    <text>The cytoplasmic C-terminal domain is necessary for targeting the non-ubiquitinated form of this protein to the cell surface.</text>
+  </comment>
+  <comment type="PTM">
+    <text evidence="7">Ubiquitinated. Deubiquitinated by USP4; leading to stabilization and expression at the cell surface.</text>
+  </comment>
+  <comment type="similarity">
+    <text evidence="4">Belongs to the G-protein coupled receptor 1 family.</text>
+  </comment>
+  <comment type="sequence caution" evidence="11">
+    <conflict type="erroneous initiation">
+      <sequence resource="EMBL-CDS" id="AAA58356" version="1"/>
+    </conflict>
+  </comment>
+  <dbReference type="EMBL" id="M97370">
+    <property type="protein sequence ID" value="AAA58356.1"/>
+    <property type="status" value="ALT_INIT"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="X68486">
+    <property type="protein sequence ID" value="CAA48504.1"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="S46950">
+    <property type="protein sequence ID" value="AAB23956.1"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="U40771">
+    <property type="protein sequence ID" value="AAA83270.1"/>
+    <property type="molecule type" value="Genomic_DNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="U40770">
+    <property type="protein sequence ID" value="AAA83270.1"/>
+    <property type="status" value="JOINED"/>
+    <property type="molecule type" value="Genomic_DNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="AY136747">
+    <property type="protein sequence ID" value="AAN01273.1"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="CR456367">
+    <property type="protein sequence ID" value="CAG30253.1"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="BT006999">
+    <property type="protein sequence ID" value="AAP35645.1"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="AK312946">
+    <property type="protein sequence ID" value="BAG35787.1"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="CH471095">
+    <property type="protein sequence ID" value="EAW59658.1"/>
+    <property type="molecule type" value="Genomic_DNA"/>
+  </dbReference>
+  <dbReference type="EMBL" id="BC013780">
+    <property type="protein sequence ID" value="AAH13780.1"/>
+    <property type="molecule type" value="mRNA"/>
+  </dbReference>
+  <dbReference type="CCDS" id="CCDS13826.1"/>
+  <dbReference type="PIR" id="A48978">
+    <property type="entry name" value="A48978"/>
+  </dbReference>
+  <dbReference type="RefSeq" id="NP_000666.2">
+    <property type="nucleotide sequence ID" value="NM_000675.5"/>
+  </dbReference>
+  <dbReference type="RefSeq" id="NP_001265426.1">
+    <property type="nucleotide sequence ID" value="NM_001278497.2"/>
+  </dbReference>
+  <dbReference type="RefSeq" id="NP_001265427.1">
+    <property type="nucleotide sequence ID" value="NM_001278498.2"/>
+  </dbReference>
+  <dbReference type="RefSeq" id="NP_001265428.1">
+    <property type="nucleotide sequence ID" value="NM_001278499.2"/>
+  </dbReference>
+  <dbReference type="RefSeq" id="NP_001265429.1">
+    <property type="nucleotide sequence ID" value="NM_001278500.2"/>
+  </dbReference>
+  <dbReference type="PDB" id="2YDO">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.00 A"/>
+    <property type="chains" value="A=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="2YDV">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.60 A"/>
+    <property type="chains" value="A=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="3EML">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.60 A"/>
+    <property type="chains" value="A=2-208, A=222-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="3PWH">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.30 A"/>
+    <property type="chains" value="A=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="3QAK">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.71 A"/>
+    <property type="chains" value="A=2-208, A=222-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="3REY">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.31 A"/>
+    <property type="chains" value="A=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="3RFM">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.60 A"/>
+    <property type="chains" value="A=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="3UZA">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.27 A"/>
+    <property type="chains" value="A=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="3UZC">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.34 A"/>
+    <property type="chains" value="A=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="3VG9">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.70 A"/>
+    <property type="chains" value="A=1-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="3VGA">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.10 A"/>
+    <property type="chains" value="A=1-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="4EIY">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.80 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="4UG2">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.60 A"/>
+    <property type="chains" value="A/B=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="4UHR">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.60 A"/>
+    <property type="chains" value="A=1-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5G53">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.40 A"/>
+    <property type="chains" value="A/B=1-308"/>
+  </dbReference>
+  <dbReference type="PDB" id="5IU4">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.72 A"/>
+    <property type="chains" value="A=2-208, A=219-318"/>
+  </dbReference>
+  <dbReference type="PDB" id="5IU7">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.90 A"/>
+    <property type="chains" value="A=2-208, A=219-315"/>
+  </dbReference>
+  <dbReference type="PDB" id="5IU8">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.00 A"/>
+    <property type="chains" value="A=2-208, A=219-315"/>
+  </dbReference>
+  <dbReference type="PDB" id="5IUA">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.20 A"/>
+    <property type="chains" value="A=2-208, A=219-315"/>
+  </dbReference>
+  <dbReference type="PDB" id="5IUB">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.10 A"/>
+    <property type="chains" value="A=2-208, A=219-315"/>
+  </dbReference>
+  <dbReference type="PDB" id="5JTB">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.80 A"/>
+    <property type="chains" value="A=2-212, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5K2A">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.50 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5K2B">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.50 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5K2C">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.90 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5K2D">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.90 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5MZJ">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.00 A"/>
+    <property type="chains" value="A=2-208, A=219-318"/>
+  </dbReference>
+  <dbReference type="PDB" id="5MZP">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.10 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5N2R">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.80 A"/>
+    <property type="chains" value="A=2-208, A=219-318"/>
+  </dbReference>
+  <dbReference type="PDB" id="5NLX">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.14 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5NM2">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.95 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5NM4">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.70 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5OLG">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.87 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5OLH">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.60 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5OLO">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.10 A"/>
+    <property type="chains" value="A=2-208, A=219-318"/>
+  </dbReference>
+  <dbReference type="PDB" id="5OLV">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.00 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5OLZ">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.90 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5OM1">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.10 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5OM4">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.00 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="5UIG">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.50 A"/>
+    <property type="chains" value="A=1-191, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5UVI">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.20 A"/>
+    <property type="chains" value="A=2-212, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5VRA">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.35 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5WF5">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.60 A"/>
+    <property type="chains" value="A=2-208, A=222-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="5WF6">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.90 A"/>
+    <property type="chains" value="A=2-208, A=222-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6AQF">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.51 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6GDG">
+    <property type="method" value="EM"/>
+    <property type="resolution" value="4.11 A"/>
+    <property type="chains" value="A=8-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6GT3">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.00 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="6JZH">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.25 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6LPJ">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.80 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6LPK">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.80 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6LPL">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.00 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6MH8">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="4.20 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6PS7">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.85 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6S0L">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.65 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="6S0Q">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.65 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="6WQA">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.00 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="6ZDR">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.92 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="6ZDV">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.13 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="7ARO">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.12 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="7EZC">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.80 A"/>
+    <property type="chains" value="A/B=2-208, A/B=219-308"/>
+  </dbReference>
+  <dbReference type="PDB" id="7PX4">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.25 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="7PYR">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.60 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="7RM5">
+    <property type="method" value="EM"/>
+    <property type="resolution" value="2.79 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="7T32">
+    <property type="method" value="EM"/>
+    <property type="resolution" value="3.40 A"/>
+    <property type="chains" value="A=8-208, A=219-302"/>
+  </dbReference>
+  <dbReference type="PDB" id="8A2O">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.45 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8A2P">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.50 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8C9W">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.11 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8CIC">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.10 A"/>
+    <property type="chains" value="A=2-208, A=219-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8CU6">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.80 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8CU7">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.05 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8DU3">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.50 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8GNE">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.30 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8GNG">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.20 A"/>
+    <property type="chains" value="A/X=1-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8JWY">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.33 A"/>
+    <property type="chains" value="A=2-208, A=222-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8JWZ">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.37 A"/>
+    <property type="chains" value="A=2-208, A=222-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8PWN">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.40 A"/>
+    <property type="chains" value="A=2-208, A=219-318"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RQQ">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.37 A"/>
+    <property type="chains" value="A=2-208, A=219-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RVW">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.65 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RW0">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="1.94 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RW4">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.20 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RW7">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.25 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RWC">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.31 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RWD">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.05 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RWE">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.20 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RWH">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.45 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RWI">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.80 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8RWX">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.05 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDB" id="8UGW">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.90 A"/>
+    <property type="chains" value="A=2-322"/>
+  </dbReference>
+  <dbReference type="PDB" id="8WDT">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="3.34 A"/>
+    <property type="chains" value="A=2-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="9EE8">
+    <property type="method" value="EM"/>
+    <property type="resolution" value="2.63 A"/>
+    <property type="chains" value="A=2-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="9EE9">
+    <property type="method" value="EM"/>
+    <property type="resolution" value="3.16 A"/>
+    <property type="chains" value="A=2-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="9EEA">
+    <property type="method" value="EM"/>
+    <property type="resolution" value="3.36 A"/>
+    <property type="chains" value="A=2-316"/>
+  </dbReference>
+  <dbReference type="PDB" id="9FUP">
+    <property type="method" value="X-ray"/>
+    <property type="resolution" value="2.50 A"/>
+    <property type="chains" value="A=2-317"/>
+  </dbReference>
+  <dbReference type="PDBsum" id="2YDO"/>
+  <dbReference type="PDBsum" id="2YDV"/>
+  <dbReference type="PDBsum" id="3EML"/>
+  <dbReference type="PDBsum" id="3PWH"/>
+  <dbReference type="PDBsum" id="3QAK"/>
+  <dbReference type="PDBsum" id="3REY"/>
+  <dbReference type="PDBsum" id="3RFM"/>
+  <dbReference type="PDBsum" id="3UZA"/>
+  <dbReference type="PDBsum" id="3UZC"/>
+  <dbReference type="PDBsum" id="3VG9"/>
+  <dbReference type="PDBsum" id="3VGA"/>
+  <dbReference type="PDBsum" id="4EIY"/>
+  <dbReference type="PDBsum" id="4UG2"/>
+  <dbReference type="PDBsum" id="4UHR"/>
+  <dbReference type="PDBsum" id="5G53"/>
+  <dbReference type="PDBsum" id="5IU4"/>
+  <dbReference type="PDBsum" id="5IU7"/>
+  <dbReference type="PDBsum" id="5IU8"/>
+  <dbReference type="PDBsum" id="5IUA"/>
+  <dbReference type="PDBsum" id="5IUB"/>
+  <dbReference type="PDBsum" id="5JTB"/>
+  <dbReference type="PDBsum" id="5K2A"/>
+  <dbReference type="PDBsum" id="5K2B"/>
+  <dbReference type="PDBsum" id="5K2C"/>
+  <dbReference type="PDBsum" id="5K2D"/>
+  <dbReference type="PDBsum" id="5MZJ"/>
+  <dbReference type="PDBsum" id="5MZP"/>
+  <dbReference type="PDBsum" id="5N2R"/>
+  <dbReference type="PDBsum" id="5NLX"/>
+  <dbReference type="PDBsum" id="5NM2"/>
+  <dbReference type="PDBsum" id="5NM4"/>
+  <dbReference type="PDBsum" id="5OLG"/>
+  <dbReference type="PDBsum" id="5OLH"/>
+  <dbReference type="PDBsum" id="5OLO"/>
+  <dbReference type="PDBsum" id="5OLV"/>
+  <dbReference type="PDBsum" id="5OLZ"/>
+  <dbReference type="PDBsum" id="5OM1"/>
+  <dbReference type="PDBsum" id="5OM4"/>
+  <dbReference type="PDBsum" id="5UIG"/>
+  <dbReference type="PDBsum" id="5UVI"/>
+  <dbReference type="PDBsum" id="5VRA"/>
+  <dbReference type="PDBsum" id="5WF5"/>
+  <dbReference type="PDBsum" id="5WF6"/>
+  <dbReference type="PDBsum" id="6AQF"/>
+  <dbReference type="PDBsum" id="6GDG"/>
+  <dbReference type="PDBsum" id="6GT3"/>
+  <dbReference type="PDBsum" id="6JZH"/>
+  <dbReference type="PDBsum" id="6LPJ"/>
+  <dbReference type="PDBsum" id="6LPK"/>
+  <dbReference type="PDBsum" id="6LPL"/>
+  <dbReference type="PDBsum" id="6MH8"/>
+  <dbReference type="PDBsum" id="6PS7"/>
+  <dbReference type="PDBsum" id="6S0L"/>
+  <dbReference type="PDBsum" id="6S0Q"/>
+  <dbReference type="PDBsum" id="6WQA"/>
+  <dbReference type="PDBsum" id="6ZDR"/>
+  <dbReference type="PDBsum" id="6ZDV"/>
+  <dbReference type="PDBsum" id="7ARO"/>
+  <dbReference type="PDBsum" id="7EZC"/>
+  <dbReference type="PDBsum" id="7PX4"/>
+  <dbReference type="PDBsum" id="7PYR"/>
+  <dbReference type="PDBsum" id="7RM5"/>
+  <dbReference type="PDBsum" id="7T32"/>
+  <dbReference type="PDBsum" id="8A2O"/>
+  <dbReference type="PDBsum" id="8A2P"/>
+  <dbReference type="PDBsum" id="8C9W"/>
+  <dbReference type="PDBsum" id="8CIC"/>
+  <dbReference type="PDBsum" id="8CU6"/>
+  <dbReference type="PDBsum" id="8CU7"/>
+  <dbReference type="PDBsum" id="8DU3"/>
+  <dbReference type="PDBsum" id="8GNE"/>
+  <dbReference type="PDBsum" id="8GNG"/>
+  <dbReference type="PDBsum" id="8JWY"/>
+  <dbReference type="PDBsum" id="8JWZ"/>
+  <dbReference type="PDBsum" id="8PWN"/>
+  <dbReference type="PDBsum" id="8RQQ"/>
+  <dbReference type="PDBsum" id="8RVW"/>
+  <dbReference type="PDBsum" id="8RW0"/>
+  <dbReference type="PDBsum" id="8RW4"/>
+  <dbReference type="PDBsum" id="8RW7"/>
+  <dbReference type="PDBsum" id="8RWC"/>
+  <dbReference type="PDBsum" id="8RWD"/>
+  <dbReference type="PDBsum" id="8RWE"/>
+  <dbReference type="PDBsum" id="8RWH"/>
+  <dbReference type="PDBsum" id="8RWI"/>
+  <dbReference type="PDBsum" id="8RWX"/>
+  <dbReference type="PDBsum" id="8UGW"/>
+  <dbReference type="PDBsum" id="8WDT"/>
+  <dbReference type="PDBsum" id="9EE8"/>
+  <dbReference type="PDBsum" id="9EE9"/>
+  <dbReference type="PDBsum" id="9EEA"/>
+  <dbReference type="PDBsum" id="9FUP"/>
+  <dbReference type="AlphaFoldDB" id="P29274"/>
+  <dbReference type="EMDB" id="EMD-24551"/>
+  <dbReference type="EMDB" id="EMD-25648"/>
+  <dbReference type="EMDB" id="EMD-29586"/>
+  <dbReference type="EMDB" id="EMD-4390"/>
+  <dbReference type="EMDB" id="EMD-47951"/>
+  <dbReference type="EMDB" id="EMD-47952"/>
+  <dbReference type="EMDB" id="EMD-47953"/>
+  <dbReference type="SMR" id="P29274"/>
+  <dbReference type="BioGRID" id="106647">
+    <property type="interactions" value="28"/>
+  </dbReference>
+  <dbReference type="CORUM" id="P29274"/>
+  <dbReference type="FunCoup" id="P29274">
+    <property type="interactions" value="1456"/>
+  </dbReference>
+  <dbReference type="IntAct" id="P29274">
+    <property type="interactions" value="24"/>
+  </dbReference>
+  <dbReference type="MINT" id="P29274"/>
+  <dbReference type="STRING" id="9606.ENSP00000480012"/>
+  <dbReference type="BindingDB" id="P29274"/>
+  <dbReference type="ChEMBL" id="CHEMBL251"/>
+  <dbReference type="DrugBank" id="DB07954">
+    <property type="generic name" value="3-isobutyl-1-methyl-7H-xanthine"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB08770">
+    <property type="generic name" value="4-{2-[(7-amino-2-furan-2-yl[1,2,4]triazolo[1,5-a][1,3,5]triazin-5-yl)amino]ethyl}phenol"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB02282">
+    <property type="generic name" value="5'-S-methyl-5'-thioadenosine"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB14132">
+    <property type="generic name" value="8-chlorotheophylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00640">
+    <property type="generic name" value="Adenosine"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB05009">
+    <property type="generic name" value="Apadenoson"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB05191">
+    <property type="generic name" value="Atl146e"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB04853">
+    <property type="generic name" value="Binodenoson"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB14018">
+    <property type="generic name" value="Bromotheophylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00201">
+    <property type="generic name" value="Caffeine"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB16125">
+    <property type="generic name" value="Ciforadenant"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB04932">
+    <property type="generic name" value="Defibrotide"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB09273">
+    <property type="generic name" value="Doxofylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB12946">
+    <property type="generic name" value="DPCPX"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00651">
+    <property type="generic name" value="Dyphylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00824">
+    <property type="generic name" value="Enprofylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB17506">
+    <property type="generic name" value="Etrumadenant"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB12295">
+    <property type="generic name" value="Evodenoson"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB16192">
+    <property type="generic name" value="Imaradenant"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB19129">
+    <property type="generic name" value="Inupadenant"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB11757">
+    <property type="generic name" value="Istradefylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB17080">
+    <property type="generic name" value="KW-6356"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00555">
+    <property type="generic name" value="Lamotrigine"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00358">
+    <property type="generic name" value="Mefloquine"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00683">
+    <property type="generic name" value="Midazolam"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB01303">
+    <property type="generic name" value="Oxtriphylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00806">
+    <property type="generic name" value="Pentoxifylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB11864">
+    <property type="generic name" value="Preladenant"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB06213">
+    <property type="generic name" value="Regadenoson"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB12443">
+    <property type="generic name" value="Sonedenoson"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB12919">
+    <property type="generic name" value="T-62"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB18811">
+    <property type="generic name" value="Taminadenant"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB01412">
+    <property type="generic name" value="Theobromine"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB00277">
+    <property type="generic name" value="Theophylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB12569">
+    <property type="generic name" value="Tonapofylline"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB12203">
+    <property type="generic name" value="Tozadenant"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB12691">
+    <property type="generic name" value="UK-432097"/>
+  </dbReference>
+  <dbReference type="DrugBank" id="DB06625">
+    <property type="generic name" value="Vipadenant"/>
+  </dbReference>
+  <dbReference type="DrugCentral" id="P29274"/>
+  <dbReference type="GuidetoPHARMACOLOGY" id="19"/>
+  <dbReference type="TCDB" id="9.A.14.3.8">
+    <property type="family name" value="the g-protein-coupled receptor (gpcr) family"/>
+  </dbReference>
+  <dbReference type="GlyCosmos" id="P29274">
+    <property type="glycosylation" value="1 site, No reported glycans"/>
+  </dbReference>
+  <dbReference type="GlyGen" id="P29274">
+    <property type="glycosylation" value="1 site"/>
+  </dbReference>
+  <dbReference type="iPTMnet" id="P29274"/>
+  <dbReference type="PhosphoSitePlus" id="P29274"/>
+  <dbReference type="BioMuta" id="ADORA2A"/>
+  <dbReference type="DMDM" id="543740"/>
+  <dbReference type="MassIVE" id="P29274"/>
+  <dbReference type="PaxDb" id="9606-ENSP00000336630"/>
+  <dbReference type="PeptideAtlas" id="P29274"/>
+  <dbReference type="ProteomicsDB" id="54531"/>
+  <dbReference type="ABCD" id="P29274">
+    <property type="antibodies" value="3 sequenced antibodies"/>
+  </dbReference>
+  <dbReference type="Antibodypedia" id="9718">
+    <property type="antibodies" value="446 antibodies from 41 providers"/>
+  </dbReference>
+  <dbReference type="DNASU" id="135"/>
+  <dbReference type="Ensembl" id="ENST00000337539.12">
+    <property type="protein sequence ID" value="ENSP00000336630.6"/>
+    <property type="gene ID" value="ENSG00000128271.23"/>
+  </dbReference>
+  <dbReference type="Ensembl" id="ENST00000610595.4">
+    <property type="protein sequence ID" value="ENSP00000480012.1"/>
+    <property type="gene ID" value="ENSG00000128271.23"/>
+  </dbReference>
+  <dbReference type="Ensembl" id="ENST00000611543.4">
+    <property type="protein sequence ID" value="ENSP00000483102.1"/>
+    <property type="gene ID" value="ENSG00000128271.23"/>
+  </dbReference>
+  <dbReference type="Ensembl" id="ENST00000618076.3">
+    <property type="protein sequence ID" value="ENSP00000481552.1"/>
+    <property type="gene ID" value="ENSG00000128271.23"/>
+  </dbReference>
+  <dbReference type="GeneID" id="135"/>
+  <dbReference type="KEGG" id="hsa:135"/>
+  <dbReference type="MANE-Select" id="ENST00000337539.12">
+    <property type="protein sequence ID" value="ENSP00000336630.6"/>
+    <property type="RefSeq nucleotide sequence ID" value="NM_000675.6"/>
+    <property type="RefSeq protein sequence ID" value="NP_000666.2"/>
+  </dbReference>
+  <dbReference type="AGR" id="HGNC:263"/>
+  <dbReference type="ClinPGx" id="PA24584"/>
+  <dbReference type="CTD" id="135"/>
+  <dbReference type="DisGeNET" id="135"/>
+  <dbReference type="GeneCards" id="ADORA2A"/>
+  <dbReference type="HGNC" id="HGNC:263">
+    <property type="gene designation" value="ADORA2A"/>
+  </dbReference>
+  <dbReference type="HPA" id="ENSG00000128271">
+    <property type="expression patterns" value="Group enriched (bone marrow, brain, lymphoid tissue)"/>
+  </dbReference>
+  <dbReference type="MalaCards" id="ADORA2A"/>
+  <dbReference type="MIM" id="102776">
+    <property type="type" value="gene"/>
+  </dbReference>
+  <dbReference type="OpenTargets" id="ENSG00000128271"/>
+  <dbReference type="Orphanet" id="363549">
+    <property type="disease" value="Acute encephalopathy with biphasic seizures and late reduced diffusion"/>
+  </dbReference>
+  <dbReference type="VEuPathDB" id="HostDB:ENSG00000128271"/>
+  <dbReference type="eggNOG" id="KOG3656">
+    <property type="taxonomic scope" value="Eukaryota"/>
+  </dbReference>
+  <dbReference type="GeneTree" id="ENSGT01030000234555"/>
+  <dbReference type="InParanoid" id="P29274"/>
+  <dbReference type="OMA" id="PPLWLMY"/>
+  <dbReference type="OrthoDB" id="9445642at2759"/>
+  <dbReference type="PAN-GO" id="P29274">
+    <property type="GO annotations" value="4 GO annotations based on evolutionary models"/>
+  </dbReference>
+  <dbReference type="PhylomeDB" id="P29274"/>
+  <dbReference type="PathwayCommons" id="P29274"/>
+  <dbReference type="Reactome" id="R-HSA-187024">
+    <property type="pathway name" value="NGF-independant TRKA activation"/>
+  </dbReference>
+  <dbReference type="Reactome" id="R-HSA-417973">
+    <property type="pathway name" value="Adenosine P1 receptors"/>
+  </dbReference>
+  <dbReference type="Reactome" id="R-HSA-418555">
+    <property type="pathway name" value="G alpha (s) signalling events"/>
+  </dbReference>
+  <dbReference type="Reactome" id="R-HSA-5683826">
+    <property type="pathway name" value="Surfactant metabolism"/>
+  </dbReference>
+  <dbReference type="SignaLink" id="P29274"/>
+  <dbReference type="SIGNOR" id="P29274"/>
+  <dbReference type="Agora" id="ENSG00000128271"/>
+  <dbReference type="BioGRID-ORCS" id="135">
+    <property type="hits" value="14 hits in 1156 CRISPR screens"/>
+  </dbReference>
+  <dbReference type="EvolutionaryTrace" id="P29274"/>
+  <dbReference type="GeneWiki" id="Adenosine_A2A_receptor"/>
+  <dbReference type="GenomeRNAi" id="135"/>
+  <dbReference type="Pharos" id="P29274">
+    <property type="development level" value="Tclin"/>
+  </dbReference>
+  <dbReference type="PRO" id="PR:P29274"/>
+  <dbReference type="Proteomes" id="UP000005640">
+    <property type="component" value="Chromosome 22"/>
+  </dbReference>
+  <dbReference type="RNAct" id="P29274">
+    <property type="molecule type" value="protein"/>
+  </dbReference>
+  <dbReference type="Bgee" id="ENSG00000128271">
+    <property type="expression patterns" value="Expressed in putamen and 94 other cell types or tissues"/>
+  </dbReference>
+  <dbReference type="ExpressionAtlas" id="P29274">
+    <property type="expression patterns" value="baseline and differential"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0032279">
+    <property type="term" value="C:asymmetric synapse"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0030673">
+    <property type="term" value="C:axolemma"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0030425">
+    <property type="term" value="C:dendrite"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0098978">
+    <property type="term" value="C:glutamatergic synapse"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0005882">
+    <property type="term" value="C:intermediate filament"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0016020">
+    <property type="term" value="C:membrane"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0043025">
+    <property type="term" value="C:neuronal cell body"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0005886">
+    <property type="term" value="C:plasma membrane"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="UniProtKB"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0045211">
+    <property type="term" value="C:postsynaptic membrane"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0048786">
+    <property type="term" value="C:presynaptic active zone"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0042734">
+    <property type="term" value="C:presynaptic membrane"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0051393">
+    <property type="term" value="F:alpha-actinin binding"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0005516">
+    <property type="term" value="F:calmodulin binding"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="DisProt"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0019899">
+    <property type="term" value="F:enzyme binding"/>
+    <property type="evidence" value="ECO:0000353"/>
+    <property type="project" value="UniProtKB"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0001609">
+    <property type="term" value="F:G protein-coupled adenosine receptor activity"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="UniProtKB"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0042802">
+    <property type="term" value="F:identical protein binding"/>
+    <property type="evidence" value="ECO:0000353"/>
+    <property type="project" value="IntAct"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0008289">
+    <property type="term" value="F:lipid binding"/>
+    <property type="evidence" value="ECO:0000353"/>
+    <property type="project" value="DisProt"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0044877">
+    <property type="term" value="F:protein-containing complex binding"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0031802">
+    <property type="term" value="F:type 5 metabotropic glutamate receptor binding"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007189">
+    <property type="term" value="P:adenylate cyclase-activating G protein-coupled receptor signaling pathway"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="UniProtKB"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007188">
+    <property type="term" value="P:adenylate cyclase-modulating G protein-coupled receptor signaling pathway"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0006915">
+    <property type="term" value="P:apoptotic process"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0097190">
+    <property type="term" value="P:apoptotic signaling pathway"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0048143">
+    <property type="term" value="P:astrocyte activation"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0008015">
+    <property type="term" value="P:blood circulation"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007596">
+    <property type="term" value="P:blood coagulation"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007267">
+    <property type="term" value="P:cell-cell signaling"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0006968">
+    <property type="term" value="P:cellular defense response"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007417">
+    <property type="term" value="P:central nervous system development"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0042755">
+    <property type="term" value="P:eating behavior"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0060079">
+    <property type="term" value="P:excitatory postsynaptic potential"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0001973">
+    <property type="term" value="P:G protein-coupled adenosine receptor signaling pathway"/>
+    <property type="evidence" value="ECO:0000318"/>
+    <property type="project" value="GO_Central"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0006954">
+    <property type="term" value="P:inflammatory response"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0060080">
+    <property type="term" value="P:inhibitory postsynaptic potential"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007626">
+    <property type="term" value="P:locomotory behavior"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0051899">
+    <property type="term" value="P:membrane depolarization"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0046636">
+    <property type="term" value="P:negative regulation of alpha-beta T cell activation"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0008285">
+    <property type="term" value="P:negative regulation of cell population proliferation"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0050728">
+    <property type="term" value="P:negative regulation of inflammatory response"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0043524">
+    <property type="term" value="P:negative regulation of neuron apoptotic process"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0043116">
+    <property type="term" value="P:negative regulation of vascular permeability"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0048812">
+    <property type="term" value="P:neuron projection morphogenesis"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0006909">
+    <property type="term" value="P:phagocytosis"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007200">
+    <property type="term" value="P:phospholipase C-activating G protein-coupled receptor signaling pathway"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0014057">
+    <property type="term" value="P:positive regulation of acetylcholine secretion, neurotransmission"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:2001235">
+    <property type="term" value="P:positive regulation of apoptotic signaling pathway"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0045938">
+    <property type="term" value="P:positive regulation of circadian sleep/wake cycle, sleep"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0070374">
+    <property type="term" value="P:positive regulation of ERK1 and ERK2 cascade"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0014049">
+    <property type="term" value="P:positive regulation of glutamate secretion"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:1900273">
+    <property type="term" value="P:positive regulation of long-term synaptic potentiation"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0050714">
+    <property type="term" value="P:positive regulation of protein secretion"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0032230">
+    <property type="term" value="P:positive regulation of synaptic transmission, GABAergic"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0051968">
+    <property type="term" value="P:positive regulation of synaptic transmission, glutamatergic"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0035810">
+    <property type="term" value="P:positive regulation of urine volume"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0060134">
+    <property type="term" value="P:prepulse inhibition"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0099171">
+    <property type="term" value="P:presynaptic modulation of chemical synaptic transmission"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0051924">
+    <property type="term" value="P:regulation of calcium ion transport"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0006355">
+    <property type="term" value="P:regulation of DNA-templated transcription"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0051881">
+    <property type="term" value="P:regulation of mitochondrial membrane potential"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0014061">
+    <property type="term" value="P:regulation of norepinephrine secretion"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0001975">
+    <property type="term" value="P:response to amphetamine"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0031000">
+    <property type="term" value="P:response to caffeine"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0014074">
+    <property type="term" value="P:response to purine-containing compound"/>
+    <property type="evidence" value="ECO:0000314"/>
+    <property type="project" value="MGI"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0009410">
+    <property type="term" value="P:response to xenobiotic stimulus"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007600">
+    <property type="term" value="P:sensory perception"/>
+    <property type="evidence" value="ECO:0000304"/>
+    <property type="project" value="ProtInc"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0007271">
+    <property type="term" value="P:synaptic transmission, cholinergic"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0001963">
+    <property type="term" value="P:synaptic transmission, dopaminergic"/>
+    <property type="evidence" value="ECO:0000318"/>
+    <property type="project" value="GO_Central"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0035249">
+    <property type="term" value="P:synaptic transmission, glutamatergic"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="GO" id="GO:0042311">
+    <property type="term" value="P:vasodilation"/>
+    <property type="evidence" value="ECO:0000501"/>
+    <property type="project" value="Ensembl"/>
+  </dbReference>
+  <dbReference type="CDD" id="cd15068">
+    <property type="entry name" value="7tmA_Adenosine_R_A2A"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="DisProt" id="DP01547"/>
+  <dbReference type="FunFam" id="1.20.1070.10:FF:000061">
+    <property type="entry name" value="Adenosine receptor A2"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="Gene3D" id="1.20.1070.10">
+    <property type="entry name" value="Rhodopsin 7-helix transmembrane proteins"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR001513">
+    <property type="entry name" value="Adeno_A2A_rcpt"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR001634">
+    <property type="entry name" value="Adenosn_rcpt"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR000276">
+    <property type="entry name" value="GPCR_Rhodpsn"/>
+  </dbReference>
+  <dbReference type="InterPro" id="IPR017452">
+    <property type="entry name" value="GPCR_Rhodpsn_7TM"/>
+  </dbReference>
+  <dbReference type="PANTHER" id="PTHR24246:SF47">
+    <property type="entry name" value="ADENOSINE RECEPTOR A2A"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="PANTHER" id="PTHR24246">
+    <property type="entry name" value="OLFACTORY RECEPTOR AND ADENOSINE RECEPTOR"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="Pfam" id="PF00001">
+    <property type="entry name" value="7tm_1"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="PRINTS" id="PR00553">
+    <property type="entry name" value="ADENOSINA2AR"/>
+  </dbReference>
+  <dbReference type="PRINTS" id="PR00424">
+    <property type="entry name" value="ADENOSINER"/>
+  </dbReference>
+  <dbReference type="PRINTS" id="PR00237">
+    <property type="entry name" value="GPCRRHODOPSN"/>
+  </dbReference>
+  <dbReference type="SMART" id="SM01381">
+    <property type="entry name" value="7TM_GPCR_Srsx"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="SUPFAM" id="SSF81321">
+    <property type="entry name" value="Family A G protein-coupled receptor-like"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="PROSITE" id="PS00237">
+    <property type="entry name" value="G_PROTEIN_RECEP_F1_1"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <dbReference type="PROSITE" id="PS50262">
+    <property type="entry name" value="G_PROTEIN_RECEP_F1_2"/>
+    <property type="match status" value="1"/>
+  </dbReference>
+  <proteinExistence type="evidence at protein level"/>
+  <keyword id="KW-0002">3D-structure</keyword>
+  <keyword id="KW-1003">Cell membrane</keyword>
+  <keyword id="KW-1015">Disulfide bond</keyword>
+  <keyword id="KW-0297">G-protein coupled receptor</keyword>
+  <keyword id="KW-0325">Glycoprotein</keyword>
+  <keyword id="KW-0472">Membrane</keyword>
+  <keyword id="KW-1267">Proteomics identification</keyword>
+  <keyword id="KW-0675">Receptor</keyword>
+  <keyword id="KW-1185">Reference proteome</keyword>
+  <keyword id="KW-0807">Transducer</keyword>
+  <keyword id="KW-0812">Transmembrane</keyword>
+  <keyword id="KW-1133">Transmembrane helix</keyword>
+  <keyword id="KW-0832">Ubl conjugation</keyword>
+  <feature type="chain" id="PRO_0000068999" description="Adenosine receptor A2a">
+    <location>
+      <begin position="1"/>
+      <end position="412"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Extracellular" evidence="9">
+    <location>
+      <begin position="1"/>
+      <end position="7"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=1">
+    <location>
+      <begin position="8"/>
+      <end position="32"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Cytoplasmic" evidence="9">
+    <location>
+      <begin position="33"/>
+      <end position="42"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=2">
+    <location>
+      <begin position="43"/>
+      <end position="66"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Extracellular" evidence="9">
+    <location>
+      <begin position="67"/>
+      <end position="77"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=3">
+    <location>
+      <begin position="78"/>
+      <end position="100"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Cytoplasmic" evidence="9">
+    <location>
+      <begin position="101"/>
+      <end position="120"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=4">
+    <location>
+      <begin position="121"/>
+      <end position="143"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Extracellular" evidence="9">
+    <location>
+      <begin position="144"/>
+      <end position="173"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=5">
+    <location>
+      <begin position="174"/>
+      <end position="198"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Cytoplasmic" evidence="9">
+    <location>
+      <begin position="199"/>
+      <end position="234"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=6">
+    <location>
+      <begin position="235"/>
+      <end position="258"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Extracellular" evidence="9">
+    <location>
+      <begin position="259"/>
+      <end position="266"/>
+    </location>
+  </feature>
+  <feature type="transmembrane region" description="Helical; Name=7">
+    <location>
+      <begin position="267"/>
+      <end position="290"/>
+    </location>
+  </feature>
+  <feature type="topological domain" description="Cytoplasmic" evidence="9">
+    <location>
+      <begin position="291"/>
+      <end position="412"/>
+    </location>
+  </feature>
+  <feature type="region of interest" description="Disordered" evidence="5">
+    <location>
+      <begin position="391"/>
+      <end position="412"/>
+    </location>
+  </feature>
+  <feature type="binding site" evidence="10 12">
+    <location>
+      <position position="169"/>
+    </location>
+    <ligand>
+      <name>adenosine</name>
+      <dbReference type="ChEBI" id="CHEBI:16335"/>
+      <note>agonist</note>
+    </ligand>
+  </feature>
+  <feature type="binding site" evidence="10 12">
+    <location>
+      <position position="253"/>
+    </location>
+    <ligand>
+      <name>adenosine</name>
+      <dbReference type="ChEBI" id="CHEBI:16335"/>
+      <note>agonist</note>
+    </ligand>
+  </feature>
+  <feature type="binding site" evidence="10 12">
+    <location>
+      <position position="277"/>
+    </location>
+    <ligand>
+      <name>adenosine</name>
+      <dbReference type="ChEBI" id="CHEBI:16335"/>
+      <note>agonist</note>
+    </ligand>
+  </feature>
+  <feature type="binding site" evidence="10 12">
+    <location>
+      <position position="278"/>
+    </location>
+    <ligand>
+      <name>adenosine</name>
+      <dbReference type="ChEBI" id="CHEBI:16335"/>
+      <note>agonist</note>
+    </ligand>
+  </feature>
+  <feature type="glycosylation site" description="N-linked (GlcNAc...) asparagine" evidence="3">
+    <location>
+      <position position="154"/>
+    </location>
+  </feature>
+  <feature type="disulfide bond" evidence="4 9">
+    <location>
+      <begin position="71"/>
+      <end position="159"/>
+    </location>
+  </feature>
+  <feature type="disulfide bond" evidence="4 9">
+    <location>
+      <begin position="74"/>
+      <end position="146"/>
+    </location>
+  </feature>
+  <feature type="disulfide bond" evidence="4 9">
+    <location>
+      <begin position="77"/>
+      <end position="166"/>
+    </location>
+  </feature>
+  <feature type="disulfide bond" evidence="4 9">
+    <location>
+      <begin position="259"/>
+      <end position="262"/>
+    </location>
+  </feature>
+  <feature type="sequence variant" id="VAR_011835" description="In dbSNP:rs4530." evidence="6">
+    <original>A</original>
+    <variation>V</variation>
+    <location>
+      <position position="50"/>
+    </location>
+  </feature>
+  <feature type="sequence variant" id="VAR_011836" description="In dbSNP:rs4990.">
+    <original>R</original>
+    <variation>H</variation>
+    <location>
+      <position position="300"/>
+    </location>
+  </feature>
+  <feature type="sequence variant" id="VAR_003451" description="In dbSNP:rs1277013918.">
+    <original>G</original>
+    <variation>R</variation>
+    <location>
+      <position position="392"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="2"/>
+      <end position="33"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="35"/>
+      <end position="37"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="40"/>
+      <end position="57"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="59"/>
+      <end position="67"/>
+    </location>
+  </feature>
+  <feature type="strand" evidence="17">
+    <location>
+      <begin position="71"/>
+      <end position="73"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="74"/>
+      <end position="107"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="109"/>
+      <end position="115"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="118"/>
+      <end position="136"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="138"/>
+      <end position="141"/>
+    </location>
+  </feature>
+  <feature type="strand" evidence="18">
+    <location>
+      <begin position="144"/>
+      <end position="146"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="151"/>
+      <end position="157"/>
+    </location>
+  </feature>
+  <feature type="strand" evidence="19">
+    <location>
+      <begin position="158"/>
+      <end position="160"/>
+    </location>
+  </feature>
+  <feature type="strand" evidence="17">
+    <location>
+      <begin position="163"/>
+      <end position="165"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="168"/>
+      <end position="171"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="174"/>
+      <end position="179"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="182"/>
+      <end position="185"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="187"/>
+      <end position="208"/>
+    </location>
+  </feature>
+  <feature type="strand" evidence="16">
+    <location>
+      <begin position="213"/>
+      <end position="216"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="219"/>
+      <end position="258"/>
+    </location>
+  </feature>
+  <feature type="strand" evidence="14">
+    <location>
+      <begin position="260"/>
+      <end position="262"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="267"/>
+      <end position="291"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="17">
+    <location>
+      <begin position="293"/>
+      <end position="303"/>
+    </location>
+  </feature>
+  <feature type="turn" evidence="15">
+    <location>
+      <begin position="304"/>
+      <end position="307"/>
+    </location>
+  </feature>
+  <feature type="turn" evidence="14">
+    <location>
+      <begin position="308"/>
+      <end position="310"/>
+    </location>
+  </feature>
+  <feature type="helix" evidence="14">
+    <location>
+      <begin position="312"/>
+      <end position="317"/>
+    </location>
+  </feature>
+  <evidence type="ECO:0000250" key="1">
+    <source>
+      <dbReference type="UniProtKB" id="P11617"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000250" key="2">
+    <source>
+      <dbReference type="UniProtKB" id="P30543"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000255" key="3"/>
+  <evidence type="ECO:0000255" key="4">
+    <source>
+      <dbReference type="PROSITE-ProRule" id="PRU00521"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000256" key="5">
+    <source>
+      <dbReference type="SAM" id="MobiDB-lite"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="6">
+    <source>
+      <dbReference type="PubMed" id="10391209"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="7">
+    <source>
+      <dbReference type="PubMed" id="16339847"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="8">
+    <source>
+      <dbReference type="PubMed" id="17689978"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="9">
+    <source>
+      <dbReference type="PubMed" id="18832607"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000269" key="10">
+    <source>
+      <dbReference type="PubMed" id="21593763"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0000305" key="11"/>
+  <evidence type="ECO:0007744" key="12">
+    <source>
+      <dbReference type="PDB" id="2YDO"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0007744" key="13">
+    <source>
+      <dbReference type="PDB" id="2YDV"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0007829" key="14">
+    <source>
+      <dbReference type="PDB" id="2YDV"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0007829" key="15">
+    <source>
+      <dbReference type="PDB" id="3QAK"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0007829" key="16">
+    <source>
+      <dbReference type="PDB" id="3VGA"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0007829" key="17">
+    <source>
+      <dbReference type="PDB" id="5NM4"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0007829" key="18">
+    <source>
+      <dbReference type="PDB" id="8JWY"/>
+    </source>
+  </evidence>
+  <evidence type="ECO:0007829" key="19">
+    <source>
+      <dbReference type="PDB" id="8WDT"/>
+    </source>
+  </evidence>
+  <sequence length="412" mass="44707" checksum="9438E9D64A6BE61B" modified="1994-06-01" version="2">MPIMGSSVYITVELAIAVLAILGNVLVCWAVWLNSNLQNVTNYFVVSLAAADIAVGVLAIPFAITISTGFCAACHGCLFIACFVLVLTQSSIFSLLAIAIDRYIAIRIPLRYNGLVTGTRAKGIIAICWVLSFAIGLTPMLGWNNCGQPKEGKNHSQGCGEGQVACLFEDVVPMNYMVYFNFFACVLVPLLLMLGVYLRIFLAARRQLKQMESQPLPGERARSTLQKEVHAAKSLAIIVGLFALCWLPLHIINCFTFFCPDCSHAPLWLMYLAIVLSHTNSVVNPFIYAYRIREFRQTFRKIIRSHVLRQQEPFKAAGTSARVLAAHGSDGEQVSLRLNGHPPGVWANGSAPHPERRPNGYALGLVSGGSAQESQGNTGLPDVELLSHELKGVCPEPPGLDDPLAQDGAGVS</sequence>
+</entry>
+<copyright>
+Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms Distributed under the Creative Commons Attribution (CC BY 4.0) License
+</copyright>
+</uniprot>
