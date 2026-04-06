@@ -509,7 +509,3 @@ This is a **portfolio project** demonstrating computational biology and software
 ## License
 
 MIT License - See LICENSE file for details.
-
-## Questions or Feedback?
-
-Open an issue or reach out with suggestions. This project is actively maintained as part of a professional portfolio.
