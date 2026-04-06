@@ -1,8 +1,6 @@
 # Protein Annotation Toolkit
 
-A professional bioinformatics toolkit for protein data management and analysis. Integrates UniProt, KEGG, and BLAST databases with a modern async Python architecture.
-
-**Built to showcase**: Computational biology domain knowledge, async Python development, database design, API integration, and software engineering best practices.
+A bioinformatics toolkit for protein data management and analysis. Integrates UniProt, KEGG, and BLAST databases with a modern async Python architecture.
 
 ## Features
 
@@ -454,39 +452,6 @@ Normalized relational schema designed for PostgreSQL, with SQLite compatibility:
 - Indexed columns for query performance
 - Timestamps for created/updated tracking
 - Text search optimization for protein names
-
-## Skills Demonstrated
-
-This toolkit showcases professional software engineering and computational biology expertise:
-
-### Bioinformatics & Computational Biology
-- **Domain Knowledge**: UniProt, Gene Ontology, KEGG pathways, PDB structures, BLAST sequence alignment
-- **Data Formats**: UniProt XML, BLAST XML, FASTA sequences, biological identifiers
-- **Data Integration**: Combining heterogeneous biological databases into unified view
-
-### Software Engineering
-- **Async Python**: `asyncio`, `aiohttp`, concurrent API requests with proper resource management
-- **Database Design**: Normalized SQLAlchemy 2.0 ORM models with relationship mapping
-- **API Integration**: REST clients with tenacity retry logic, rate limiting, and exponential backoff
-- **XML Processing**: Efficient `lxml` parsing with XPath queries and namespace handling
-- **Error Handling**: Custom exception hierarchy with detailed validation messages
-- **Configuration**: Pydantic v2 settings with environment variable management
-- **Web Services**: FastAPI REST API with Pydantic models and OpenAPI documentation
-- **Caching**: Optional Redis integration for performance optimization
-- **Data Visualization**: Matplotlib plots with customizable styling
-
-### Software Quality
-- **Testing**: Comprehensive pytest suite with 29 tests (unit + integration), 40% coverage
-- **Type Safety**: Comprehensive type hints throughout codebase
-- **Documentation**: Docstrings, inline comments, and tutorial notebook
-- **Logging**: Structured logging with `structlog` for observability
-- **Package Management**: Modern `pyproject.toml` with optional dependencies
-- **Modular Design**: Clear separation of concerns across modules
-
-### Developer Experience
-- **CLI Design**: Click framework with Rich formatting for beautiful terminal output
-- **Interactive Tutorial**: Jupyter notebook with real API calls and data visualization
-- **Real Data**: Working examples with actual UniProt, KEGG, and BLAST data
 
 ## What's Included
 
