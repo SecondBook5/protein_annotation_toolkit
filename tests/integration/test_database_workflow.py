@@ -51,6 +51,8 @@ async def db_session():
 @pytest.mark.asyncio
 async def test_ingest_single_protein(db_session, example_xml_dir):
     """Test ingesting a single protein from XML file."""
+    from sqlalchemy.orm import selectinload
+
     service = IngestService(db_session)
     xml_file = example_xml_dir / "P13773.xml"
 
@@ -59,9 +61,11 @@ async def test_ingest_single_protein(db_session, example_xml_dir):
     data = parser.parse_file(xml_file)
     await service._store_protein_data(data)
 
-    # Query back
+    # Query back with eager loading of organism
     result = await db_session.execute(
-        select(Protein).where(Protein.uniprot_accession == "P13773")
+        select(Protein)
+        .where(Protein.uniprot_accession == "P13773")
+        .options(selectinload(Protein.organism))
     )
     protein = result.scalar_one()
 
@@ -81,6 +85,8 @@ async def test_ingest_single_protein(db_session, example_xml_dir):
 @pytest.mark.asyncio
 async def test_ingest_go_terms(db_session, example_xml_dir):
     """Test that GO terms are stored correctly."""
+    from protein_annotation_toolkit.db.models import ProteinGOTerm
+
     service = IngestService(db_session)
     xml_file = example_xml_dir / "P13773.xml"
 
@@ -98,9 +104,11 @@ async def test_ingest_go_terms(db_session, example_xml_dir):
     # Check GO term count (should match parsed data)
     assert len(data["go_terms"]) > 0
 
-    # Query GO terms through relationship
+    # Query GO terms through association table
     result = await db_session.execute(
-        select(GOTerm).join(GOTerm.proteins).where(Protein.id == protein.id)
+        select(GOTerm)
+        .join(ProteinGOTerm, ProteinGOTerm.go_term_id == GOTerm.id)
+        .where(ProteinGOTerm.protein_id == protein.id)
     )
     go_terms = result.scalars().all()
 
